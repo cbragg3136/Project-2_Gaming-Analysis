@@ -1,3 +1,4 @@
+import os
 from flask import Flask, jsonify
 from flask_pymongo import PyMongo
 from os import environ
