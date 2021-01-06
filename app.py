@@ -4,7 +4,8 @@ from os import environ
 
 app = Flask(__name__)
 
-app.config['MONGO_URI'] = environ.get('MONGODB_URI', 'mongodb://localhost:27017/steam')
+app.config['MONGO_URI'] = environ.get(
+    'MONGODB_URI', 'mongodb://localhost:27017/steam_project_db')
 
 mongo = PyMongo(app)
 
@@ -12,40 +13,36 @@ mongo = PyMongo(app)
 def index():
     return 'Hello World!'
 
-@app.route('api/appid-mongo')
-def getAppidsMongo():
-    appids = mongo.db.appid.find()
+@app.route('/api/appid-mongo')
+def getAppidMongo():
+    appid = mongo.db.appid.find()
     data = []
 
-    for appid in appids:
+    for game in appid:
         item = {
-            '_id': str(appid['_id']),
-            'description': appid['description'],
-            'appid': appid['appid'],
-            'type': appid['type'],
-            'name_x': appid['name_x'],
-            'short_description': appid['short_description'],
-            'metascore': appid['metascore'],
-            'categories': appid['categories'],
-            'genres': appid['genres'],
-            'recommendations': appid['recommendations'],
-            'release_date': appid['release_date'],
-            'name_y': appid['name_y'],
-            'developer': appid['developer'],
-            'publisher': appid['publisher'],
-            'score_rank': appid['score_rank'],
-            'positive': appid['positive'],
-            'negative': appid['negative'],
-            'userscore': appid['userscore'],
-            'owners': appid['owners'],
-            'average_forever': appid['average_forever'],
-            'average_2weeks': appid['average_2weeks'],
-            'median_forever': appid['median_forever'],
-            'median_2weeks': appid['median_2weeks'],
-            'price': appid['price'],
-            'initialprice': appid['initialprice'],
-            'discount': appid['discount'],
-            'ccu': appid['ccu']
+            '_id': str(game['_id']),
+            'appid': game['appid'],
+            'type': game['type'],
+            'name_x': game['name_x'],
+            'short_description': game['short_description'],
+            'metascore': game['metascore'],
+            'categories': game['categories'],
+            'genres': game['genres'],
+            'recommendations': game['recommendations'],
+            'release_date': game['release_date'],
+            'developer': game['developer'],
+            'publisher': game['publisher'],
+            'positive': game['positive'],
+            'negative': game['negative'],
+            'owners': game['owners'],
+            'average_forever': game['average_forever'],
+            'average_2weeks': game['average_2weeks'],
+            'median_forever': game['median_forever'],
+            'median_2weeks': game['median_2weeks'],
+            'price': game['price'],
+            'initialprice': game['initialprice'],
+            'discount': game['discount'],
+            'ccu': game['ccu']
         }
 
         data.append(item)
