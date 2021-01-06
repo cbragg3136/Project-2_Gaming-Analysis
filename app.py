@@ -1,11 +1,10 @@
-import os
 from flask import Flask, jsonify
 from flask_pymongo import PyMongo
 from os import environ
 
 app = Flask(__name__)
 
-app.config('MONGO_URI') = environ.get('MONGODB_URI', 'mongodb://localhost:27017/steam')
+app.config['MONGO_URI'] = environ.get('MONGODB_URI', 'mongodb://localhost:27017/steam')
 
 mongo = PyMongo(app)
 
