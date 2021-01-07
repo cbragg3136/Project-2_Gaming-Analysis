@@ -11,8 +11,7 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')
-
+    return render_template("index.html")
 @app.route('/api/players')
 def show_player_data():
     data = []
