@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, render_template
 from flask_pymongo import PyMongo
 from os import environ
 
@@ -11,7 +11,7 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
-    return 'Hello World!'
+    return render_template('index.html')
 
 @app.route('/api/appid-mongo')
 def getAppidMongo():
