@@ -13,9 +13,25 @@ mongo = PyMongo(app)
 def index():
     return render_template('index.html')
 
+@app.route('/api/players')
+def show_player_data():
+    data = []
+    games = mongo.db.players.find({})
+    for g in games:
+        item = {
+            '_id': str(g['_id']),
+            'Name': g['Name'],
+            'Current Players': g['Current Players'],
+            'Peak Players': g['Peak Players'],
+            'Time': g['Time'],
+            'Link': g['Link']
+        }
+        data.append(item)
+    return jsonify(data)
+
 @app.route('/api/appid-mongo')
 def getAppidMongo():
-    appid = mongo.db.appid.find()
+    appid = mongo.db.steam_metadata.find()
     data = []
 
     for game in appid:
