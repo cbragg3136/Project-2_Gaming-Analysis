@@ -1,4 +1,4 @@
-fetch ("./games.json")
+fetch ("../../games.json")
   .then(function(resp){
     return resp.json();
   })
@@ -14,7 +14,7 @@ function unpack(rows, index) {
 }
 
 function getcountryData() {
-  d3.json("./games.json").then(function (data){
+  d3.json("../../games.json").then(function (data){
     var country = d3.select("#myInput").property("value")
     data = data.filter(row=>row.Country===country);
     var ID = unpack(data, "ID");
@@ -35,7 +35,7 @@ d3.selectAll("#countrysearch").on("click", getcountryData);
 //////////////////////////////
 
 function getgameData() {
-  d3.json("./games.json").then(function (data){
+  d3.json("../../games.json").then(function (data){
     var game = d3.select("#myInput").property("value")
     data = data.filter(row=>row.Game===game);
     var ID = unpack(data, "ID");

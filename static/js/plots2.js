@@ -1,4 +1,4 @@
-fetch ("./pcgames.json")
+fetch ("../../pcgames.json")
   .then(function(resp){
     return resp.json();
   })
@@ -14,7 +14,7 @@ function unpack(rows, index) {
 }
 
 function getcategoriesData() {
-  d3.json("./pcgames.json").then(function (data){
+  d3.json("../../pcgames.json").then(function (data){
     var categories = d3.select("#myInput").property("value")
     data = data.filter(row=>row.categories===categories);
     var appid = unpack(data, "appid");
@@ -53,7 +53,7 @@ d3.selectAll("#categoriessearch").on("click", getcategoriesData);
 //////////////////////////////
 
 function getgenresData() {
-    d3.json("./pcgames.json").then(function (data){
+    d3.json("../../pcgames.json").then(function (data){
         var genres = d3.select("#myInput").property("value")
         data = data.filter(row=>row.genres===genres);
         var appid = unpack(data, "appid");
@@ -90,7 +90,7 @@ function getgenresData() {
 d3.selectAll("#genressearch").on("click", getgenresData);
 
 function getpriceData() {
-    d3.json("./pcgames.json").then(function (data){
+    d3.json("../../pcgames.json").then(function (data){
         var price = d3.select("#myInput").property("value")
         data = data.filter(row=>row.price===price);
         var appid = unpack(data, "appid");
