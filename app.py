@@ -21,6 +21,7 @@ def MSGames():
 def PCGames():
     return render_template('PCGames.html')
 
+# route to return all player data
 @app.route('/api/players')
 def show_player_data():
     data = []
@@ -33,6 +34,20 @@ def show_player_data():
             'Peak Players': g['Peak Players'],
             'Time': g['Time'],
             'Link': g['Link']
+        }
+        data.append(item)
+    return jsonify(data)
+
+# route to return player data by appid
+@app.route('/players/<appid>')
+def get_players_appid(appid):
+    data = []
+    documents = mongo.db.players.find({"appid":appid})
+    for d in documents:
+        item = {
+            'Name': d['Name'],
+            'Current Players': d['Current Players'],
+            'Time': datetime.datetime.strftime(d['Time'],'%Y-%m-%d %X')
         }
         data.append(item)
     return jsonify(data)
