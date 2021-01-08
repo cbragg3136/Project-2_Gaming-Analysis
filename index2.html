@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+<!-- Bootstrap & Style Links --> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Assets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="Assets/style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+<!-- Page Title -->
+    <title>Maps</title>
+    
+<!-- Create the navigation bar at the top -->
+
+<body>
+    <!-- Humidity Body -->
+    <div class="container-fluid px-md-0" style="background-color: #EDF2F4;">
+        <div class="row justify-content-between no-gutters mx-md-0" >
+            <div class="col-12 col-md-4 position-md-sticky d-flex align-items-center vh-md-100 mx-auto" style="top: 0;">
+                <!-- Text to side of plot -->
+                <aside class="flex-grow-1 py-8 py-md-10">  
+                    <h1 style="color: #1c0080;">World Choropleth Map</h1>
+                    <p class="font-size-lg mb-7" style="color: #145385">
+                        This Choropleth Map shows a good representation of where the most Steam games are purchased worldwide. As you can see the United States purchases exponentially more games than the rest of the world. The next biggest Steam gamer countries in the world are China followed by Germany. The majority of countries buy less than 400K games with only a handful buying exponentially more. </p> 
+                        <br>
+                    <p class="font-size-lg mb-7" style="color: #145385">
+                        Note: White countries have no data/steam presence</p>
+                </aside>  
+            </div>
+            <div class="col-12 col-md-7">
+                <section class="pt-md-10 my-5 mx-2">
+                <div id='worldmap'></div>
+                </section>  
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="choro_maps.js"></script>
+
+</body>
+
+</html>
