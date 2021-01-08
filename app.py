@@ -23,6 +23,10 @@ def MSGames():
 def PCGames():
     return render_template('PCGames.html')
 
+@app.route('/top100plot.html')
+def PCGames():
+    return render_template('top100plot.html')
+
 # route to return all player data
 @app.route('/api/players')
 def show_player_data():
