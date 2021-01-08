@@ -31,14 +31,6 @@ d3.json("rank1games.json", function(earthquakeData){
     function getColor(magnitude){
         switch (true){
             case magnitude > 5: 
-                return "red";
-            case magnitude > 4:
-                return "orange";
-            case magnitude > 3:
-                return "yellow";
-            case magnitude > 2:
-                return "green";
-            case magnitude > 1:
                 return "blue";
             default: 
                 return "purple";
@@ -61,7 +53,7 @@ d3.json("rank1games.json", function(earthquakeData){
         },
         style: styleinfo,
         onEachFeature: function(feature, layer){
-            layer.bindPopup("Name:" + feature.properties.Game + "<br>location:" + feature.properties.country + "<br>date:" + feature.properties.date)
+            layer.bindPopup("<b>#1 Game:  " + feature.properties.Game + "<br> Country:  "  + feature.properties.country  + "<br>Date:  " + feature.properties.date)
         }
     }).addTo(myMap)
 
@@ -70,7 +62,7 @@ d3.json("rank1games.json", function(earthquakeData){
 legend.onAdd = function (map) {
 
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = [1,2,3,4,5]
+        grades = [1]
 
     // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length; i++) {
