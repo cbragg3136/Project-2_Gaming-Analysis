@@ -24,7 +24,7 @@ def PCGames():
     return render_template('PCGames.html')
 
 @app.route('/top100plot.html')
-def PCGames():
+def top100plot():
     return render_template('top100plot.html')
 
 # route to return all player data
