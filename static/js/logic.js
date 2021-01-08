@@ -17,7 +17,7 @@ var myMap = L.map("map",{
 });
 
 streetMap.addTo(myMap);
-d3.json("testfile_withlatlong.json", function(earthquakeData){
+d3.json("rank1games.json", function(earthquakeData){
     function styleinfo(feature){
         return {
             radius: getRadius(feature.properties.mag),
@@ -45,6 +45,12 @@ d3.json("testfile_withlatlong.json", function(earthquakeData){
         }
     }
 
+    function rank1(feature){
+        if (feature.properties.Rank == 1) {
+            return feature.properties.Game;
+        }
+    }
+
     function getRadius(magnitude){
         return magnitude * 4;
     }
@@ -55,7 +61,7 @@ d3.json("testfile_withlatlong.json", function(earthquakeData){
         },
         style: styleinfo,
         onEachFeature: function(feature, layer){
-            layer.bindPopup("magnitude" + feature.properties.mag + "<br>location" + feature.properties.place)
+            layer.bindPopup("Name:" + feature.properties.Game + "<br>location:" + feature.properties.country + "<br>date:" + feature.properties.date)
         }
     }).addTo(myMap)
 
