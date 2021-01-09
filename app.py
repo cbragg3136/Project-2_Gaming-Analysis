@@ -13,6 +13,7 @@ mongo = PyMongo(app)
 steamdb = mongo.cx['steamdb']
 xboxdb = mongo.cx['xboxdb']
 
+# Routes to html
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -33,7 +34,9 @@ def AboutUs():
 def top100plot():
     return render_template('top100plot.html')
 
+# STEAM
 
+# route to return steam user location by continent
 @app.route('/api/steam_users_continents')
 def GetSteamUsersContinents():
     data = []
@@ -47,10 +50,11 @@ def GetSteamUsersContinents():
         data.append(item)
     return jsonify(data)
 
+# route to return steam user location by country
 @app.route('/api/steam_users_countries')
 def GetSteamUsersCountries():
     data = []
-    countries = mongo.db.steam_users_countries.find({})
+    countries = steamdb.steam_users_countries.find({})
     for cn in countries:
         item = {
             '_id': str(cn['_id']),
@@ -60,10 +64,11 @@ def GetSteamUsersCountries():
         data.append(item)
     return jsonify(data)
 
+# route to return user location by US state
 @app.route('/api/steam_users_states')
 def GetSteamUsersStates():
     data = []
-    states = mongo.db.steam_users_states_us.find({})
+    states = steamdb.steam_users_states_us.find({})
     for st in states:
         item = {
             '_id': str(st['_id']),
@@ -74,11 +79,11 @@ def GetSteamUsersStates():
     return jsonify(data)
 
 
-# route to return all player data
+# route to return steam all player data
 @app.route('/api/players')
 def show_player_data():
     data = []
-    games = mongo.db.players.find({})
+    games = steamdb.players.find({})
     for g in games:
         item = {
             '_id': str(g['_id']),
@@ -91,11 +96,11 @@ def show_player_data():
         data.append(item)
     return jsonify(data)
 
-# route to return player data by appid
+# route to return steam player data by appid
 @app.route('/api/players/<appid>')
 def get_players_appid(appid):
     data = []
-    documents = mongo.db.players.find({"appid":appid})
+    documents = steamdb.players.find({"appid":appid})
     for d in documents:
         item = {
             'Name': d['Name'],
@@ -105,12 +110,12 @@ def get_players_appid(appid):
         data.append(item)
     return jsonify(data)
 
-# route to get all titles that have appeared in the top top100
+# route to get all steam titles that have appeared in the top top100
 # returns name and appid sorted by name
 @app.route('/api/top100-list/')
 def get_top100_list():
     data = []
-    documents = mongo.db.players.aggregate([{"$group":
+    documents = steamdb.players.aggregate([{"$group":
         { "_id": { "Name": "$Name", "appid": "$appid"}}},
         {"$sort": {"_id":1}}])
 
@@ -122,10 +127,10 @@ def get_top100_list():
         data.append(item)
     return jsonify(data)
 
-
-@app.route('/api/appid-mongo')
+# route to return steam metadata for all 'games'
+@app.route('/api/steam_metadata')
 def getAppidMongo():
-    appid = mongo.db.steam_metadata.find({})
+    appid = steamdb.steam_metadata.find({})
     data = []
 
     for game in appid:
@@ -160,10 +165,10 @@ def getAppidMongo():
     return jsonify(data)
 
 # XBOX
-
+# route to return xbox metadata
 @app.route('/api/xbox_metadata')
 def getXboxMetadata():
-    xbox_md = mongo.db.xbox_metadata.find({})
+    xbox_md = xboxdb.xbox_metadata.find({})
     data = []
 
     for xbox in xbox_md:
@@ -181,7 +186,7 @@ def getXboxMetadata():
 
     return jsonify(data)
 
-
+# route to return xbox top50 games
 @app.route('/api/xbox_top50')
 def GetXboxTop50():
     top50 = xboxdb.top50_by_country.find({})
