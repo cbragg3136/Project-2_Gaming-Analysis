@@ -128,7 +128,7 @@ def get_top100_list():
 # route to return steam metadata for all 'games'
 @app.route('/api/appid-mongo')
 def getAppidMongo():
-    appid = mongo.db.steam_metadata.find({})
+    appid = mongo.steamdb.steam_metadata.find({})
     data = []
 
     for game in appid:
@@ -166,7 +166,7 @@ def getAppidMongo():
 # route to return xbox metadata
 @app.route('/api/xbox_metadata')
 def getXboxMetadata():
-    xbox_md = mongo.db.xbox_metadata.find({})
+    xbox_md = mongo.xboxdb.xbox_metadata.find({})
     data = []
 
     for xbox in xbox_md:
