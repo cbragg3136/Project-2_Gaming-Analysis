@@ -66,6 +66,10 @@ def GetSteamUsersStates():
         }
         data.append(item)
     return jsonify(data)
+    
+@app.route('/top100plot.html')
+def top100plot():
+    return render_template('top100plot.html')
 
 # route to return all player data
 @app.route('/api/players')
@@ -85,7 +89,7 @@ def show_player_data():
     return jsonify(data)
 
 # route to return player data by appid
-@app.route('/players/<appid>')
+@app.route('/api/players/<appid>')
 def get_players_appid(appid):
     data = []
     documents = mongo.db.players.find({"appid":appid})
@@ -97,6 +101,24 @@ def get_players_appid(appid):
         }
         data.append(item)
     return jsonify(data)
+
+# route to get all titles that have appeared in the top top100
+# returns name and appid sorted by name
+@app.route('/api/top100-list/')
+def get_top100_list():
+    data = []
+    documents = mongo.db.players.aggregate([{"$group":
+        { "_id": { "Name": "$Name", "appid": "$appid"}}},
+        {"$sort": {"_id":1}}])
+
+    for d in documents:
+        item = {
+            'Name': d["_id"]["Name"],
+            'appid': d["_id"]["appid"]
+        }
+        data.append(item)
+    return jsonify(data)
+
 
 @app.route('/api/appid-mongo')
 def getAppidMongo():
