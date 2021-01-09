@@ -7,7 +7,10 @@ import datetime
 app = Flask(__name__)
 
 app.config['MONGO_URI'] = environ.get(
-    'MONGODB_URI', 'mongodb://localhost:27017/steam_project_db')
+    'MONGODB_URI', 'mongodb://localhost:27017/steamdb')
+
+app.config['MONGO_URI2'] = environ.get(
+    'MONGODB_URI2', 'mongodb://localhost:27017/xboxdb')
 
 mongo = PyMongo(app)
 
