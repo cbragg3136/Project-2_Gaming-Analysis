@@ -128,7 +128,7 @@ def get_top100_list():
 # route to return steam metadata for all 'games'
 @app.route('/api/appid-mongo')
 def getAppidMongo():
-    appid = mongo.db.steam_metadata.find({})
+    appid = mongo.steamdb.steam_metadata.find({})
     data = []
 
     for game in appid:
