@@ -4,14 +4,14 @@
         <title>MS Games</title>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-        <link href="../static/css/styles2.css" rel="Stylesheet" type="text/css" />
+        <link href="css/styles2.css" rel="Stylesheet" type="text/css" />
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <header>
       <div class="flex">
           <div class="logo">
-              <a href="#"><img src="../static/images/war_zone.jpg" alt="War Zone" /></a>
+              <a href="#"><img src="images/war_zone.jpg" alt="War Zone" /></a>
           </div>
           <nav>
               <button id="nav-toggle" class="hamburger-menu">
@@ -20,9 +20,11 @@
                   <span class="strip"></span>
               </button>
               <ul id="nav-menu-container">
-                <li><a href="/">Home</a></li>
-                <li><a href="MSGames.html">MS Games</a></li>
-                <li><a href="PCGames.html">PC Games</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">MS Games</a></li>
+                  <li><a href="map.html">MS Games Map</a></li>
+                  <li><a href="MSDetail.html">MS Detail Games</a></li>
+                  <li><a href="PCGames.html">PC Games</a></li>
               </ul>
           </nav>
       </div>
@@ -87,7 +89,7 @@
           <div id="myDropdown" class="dropdown-content">
             <input type="text" placeholder="Search.." id="myInput">
             <!-- <a href="#ID">ID</a> -->
-            <!-- <button id = "datesearch" type="button" class="btn btn-default"><a href="#Date">Date</a></button> -->
+            <button id = "ranksearch" type="button" class="btn btn-default"><a href="#Rank">Rank</a></button>
             <button id = "countrysearch" type="button" class="btn btn-default"><a href="#Country">Country</a></button> 
             <button id = "gamesearch" type="button" class="btn btn-default"><a href="#Game">Game</a></button> 
             <!-- <a href="#Rank">Rank</a> -->
@@ -134,13 +136,13 @@
 
         </script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
-         <script src="../games.json"></script>
-         <script src="../static/js/plots.js"></script>
+         <script src="games.json"></script>
+         <script src="static/js/plots.js"></script>
         
         </body>
     <body>
         <div id="plot"></div>
-        <script src="../static/js/plots.js"></script>
+        <script src="static/js/plots.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
     </body>
 </html>
