@@ -1,4 +1,4 @@
-fetch ("../../pcgames.json")
+fetch ("/api/appid-mongo")
   .then(function(resp){
     return resp.json();
   })
@@ -14,7 +14,7 @@ function unpack(rows, index) {
 }
 
 function getcategoriesData() {
-  d3.json("../../pcgames.json").then(function (data){
+  d3.json("/api/appid-mongo").then(function (data){
     var categories = d3.select("#myInput").property("value")
     data = data.filter(row=>row.categories===categories);
     var appid = unpack(data, "appid");
@@ -38,8 +38,8 @@ function getcategoriesData() {
     var initialprice = unpack(data, "initialprice");
     var discount = unpack(data, "discount");
     var ccu = unpack(data, "ccu");
-        buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations, 
-            release_date, developer, publisher, positive, negative, owners, average_forever, 
+        buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations,
+            release_date, developer, publisher, positive, negative, owners, average_forever,
             average_2weeks, median_forever, median_2weeks, price, initialprice, discount, ccu, categories);
         console.log(data)
         buildTable(data);
@@ -53,7 +53,7 @@ d3.selectAll("#categoriessearch").on("click", getcategoriesData);
 //////////////////////////////
 
 function getgenresData() {
-    d3.json("../../pcgames.json").then(function (data){
+    d3.json("/api/appid-mongo").then(function (data){
         var genres = d3.select("#myInput").property("value")
         data = data.filter(row=>row.genres===genres);
         var appid = unpack(data, "appid");
@@ -77,8 +77,8 @@ function getgenresData() {
         var initialprice = unpack(data, "initialprice");
         var discount = unpack(data, "discount");
         var ccu = unpack(data, "ccu");
-            buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations, 
-                release_date, developer, publisher, positive, negative, owners, average_forever, 
+            buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations,
+                release_date, developer, publisher, positive, negative, owners, average_forever,
                 average_2weeks, median_forever, median_2weeks, price, initialprice, discount, ccu, categories);
             console.log(data)
             buildTable(data);
@@ -90,7 +90,7 @@ function getgenresData() {
 d3.selectAll("#genressearch").on("click", getgenresData);
 
 function getpriceData() {
-    d3.json("../../pcgames.json").then(function (data){
+    d3.json("/api/appid-mongo").then(function (data){
         var price = d3.select("#myInput").property("value")
         data = data.filter(row=>row.price===price);
         var appid = unpack(data, "appid");
@@ -114,8 +114,8 @@ function getpriceData() {
         var initialprice = unpack(data, "initialprice");
         var discount = unpack(data, "discount");
         var ccu = unpack(data, "ccu");
-            buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations, 
-                release_date, developer, publisher, positive, negative, owners, average_forever, 
+            buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations,
+                release_date, developer, publisher, positive, negative, owners, average_forever,
                 average_2weeks, median_forever, median_2weeks, price, initialprice, discount, ccu, categories);
             console.log(data)
             buildTable(data);
@@ -175,7 +175,7 @@ ccu,
     trow.append("td").text(discount[i]);
     trow.append("td").text(ccu[i]);
 
-    
+
     // Function called by DOM changes
     function dropdownchange() {
       var dropdownMenu = d3.select("#myDropdown");
@@ -184,7 +184,7 @@ ccu,
       // Initialize an empty array for the country's data
       var data = getData();
       console.log(data)
-    
+
       if (dataset == 'us') {
           data = us;
       }
@@ -197,7 +197,7 @@ ccu,
       // Call function to update the chart
       updatePlotly(data);
     }
-    
+
     // Update the restyled plot's values
     function updatePlotly(newdata) {
       Plotly.restyle("pie", "values", [newdata]);
