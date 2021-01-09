@@ -27,8 +27,12 @@ def PCGames():
 def AboutUs():
     return render_template('AboutUs.html')
 
+@app.route('/top100plot.html')
+def top100plot():
+    return render_template('top100plot.html')
 
-@app.route('/steam_users_continents')
+
+@app.route('/api/steam_users_continents')
 def GetSteamUsersContinents():
     data = []
     continents = mongo.db.steam_users_continents.find({})
@@ -41,7 +45,7 @@ def GetSteamUsersContinents():
         data.append(item)
     return jsonify(data)
 
-@app.route('/steam_users_countries')
+@app.route('/api/steam_users_countries')
 def GetSteamUsersCountries():
     data = []
     countries = mongo.db.steam_users_countries.find({})
@@ -54,7 +58,7 @@ def GetSteamUsersCountries():
         data.append(item)
     return jsonify(data)
 
-@app.route('/steam_users_states')
+@app.route('/api/steam_users_states')
 def GetSteamUsersStates():
     data = []
     states = mongo.db.steam_users_states_us.find({})
@@ -66,10 +70,7 @@ def GetSteamUsersStates():
         }
         data.append(item)
     return jsonify(data)
-    
-@app.route('/top100plot.html')
-def top100plot():
-    return render_template('top100plot.html')
+
 
 # route to return all player data
 @app.route('/api/players')
@@ -158,7 +159,7 @@ def getAppidMongo():
 
 # XBOX
 
-@app.route('/xbox_metadata')
+@app.route('/api/xbox_metadata')
 def getXboxMetadata():
     xbox_md = mongo.db.xbox_metadata.find()
     data = []
@@ -173,14 +174,16 @@ def getXboxMetadata():
             'Rating': xbox['Rating'],
             'Rating Notes': xbox['Rating Notes'],
             'Screen Links': xbox['Screen Links'],
+        }
         data.append(item)
 
     return jsonify(data)
 
-@app.route('/xbox_top50')
+
+@app.route('/api/xbox_top50')
 def GetXboxTop50():
-    data = []
     top50 = mongo.db.top50_by_country.find({})
+    data = []
     for top in top50:
         item = {
             '_id': str(top['_id']),
@@ -191,7 +194,10 @@ def GetXboxTop50():
             'Image': top['Image']
         }
         data.append(item)
+
     return jsonify(data)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
