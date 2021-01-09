@@ -1,252 +1,252 @@
-Country,Users
-No Country ,"360,941"
-Afghanistan ,"1,203"
-Aland Islands ,231
-Albania ,641
-Algeria ,829
-American Samoa ,338
-Andorra ,216
-Angola ,201
-Anguilla ,82
-Antarctica ,"2,437"
-Antigua and Barbuda ,129
-Argentina ,"3,947"
-Armenia ,449
-Aruba ,159
-Australia ,"20,016"
-Austria ,"2,858"
-Azerbaijan ,515
-Bahamas ,421
-Bahrain ,612
-Bangladesh ,716
-Barbados ,133
-Belarus ,"1,630"
-Belgium ,"3,381"
-Belize ,102
-Benin ,43
-Bermuda ,149
-Bhutan ,167
-Bolivia ,216
-"Bonaire, Sint Eustatius and Saba ",122
-Bosnia and Herzegovina ,"1,015"
-Botswana ,173
-Bouvet Island ,71
-Brazil ,"13,053"
-British Indian Ocean Territory ,112
-British Virgin Islands ,355
-Brunei ,293
-Bulgaria ,"1,770"
-Burkina Faso ,120
-Burundi ,53
-Cambodia ,211
-Cameroon ,71
-Canada ,"31,686"
-Cape Verde ,70
-Cayman Islands ,114
-Central African Republic ,141
-Chad ,793
-Chile ,"1,788"
-China ,"7,522"
-Christmas Island ,"1,050"
-Cocos ,Keeling Islands 
-Colombia ,986
-Comoros ,15
-Cook Islands ,286
-Costa Rica ,528
-Croatia ,"1,821"
-Cuba ,483
-Curaçao ,59
-Cyprus ,463
-Czech Republic ,"4,011"
-DR Congo ,361
-Denmark ,"4,778"
-Djibouti ,321
-Dominica ,56
-Dominican Republic ,258
-Ecuador ,408
-Egypt ,775
-El Salvador ,258
-Equatorial Guinea ,38
-Eritrea ,53
-Estonia ,"2,008"
-Ethiopia ,217
-Falkland Islands ,136
-Faroe Islands ,346
-Fiji ,617
-Finland ,"6,396"
-France ,"7,968"
-French Guiana ,36
-French Polynesia ,58
-French Southern and Antarctic Lands ,56
-Gabon ,131
-Gambia ,65
-Georgia ,834
-Germany ,"18,517"
-Ghana ,98
-Gibraltar ,103
-Greece ,"2,762"
-Greenland ,292
-Grenada ,66
-Guadeloupe ,76
-Guam ,133
-Guatemala ,246
-Guernsey ,102
-Guinea ,41
-Guinea-Bissau ,30
-Guyana ,47
-Haiti ,153
-Heard Island and McDonald Islands ,702
-Honduras ,201
-Hong Kong ,"1,667"
-Hungary ,"3,058"
-Iceland ,"1,155"
-India ,"4,645"
-Indonesia ,"5,608"
-Iran ,"1,294"
-Iraq ,854
-Ireland ,"2,923"
-Isle of Man ,733
-Israel ,"2,631"
-Italy ,"4,254"
-Ivory Coast ,109
-Jamaica ,663
-Japan ,"8,795"
-Jersey ,143
-Jordan ,435
-Kazakhstan ,"1,305"
-Kenya ,161
-Kiribati ,81
-Kosovo ,110
-Kuwait ,520
-Kyrgyzstan ,374
-Laos ,109
-Latvia ,"1,844"
-Lebanon ,431
-Lesotho ,31
-Liberia ,107
-Libya ,102
-Liechtenstein ,221
-Lithuania ,"2,372"
-Luxembourg ,459
-Macau ,154
-Macedonia ,669
-Madagascar ,299
-Malawi ,50
-Malaysia ,"3,094"
-Maldives ,142
-Mali ,56
-Malta ,378
-Marshall Islands ,72
-Martinique ,53
-Mauritania ,29
-Mauritius ,99
-Mayotte ,38
-Mexico ,"2,663"
-Micronesia ,120
-Moldova ,590
-Monaco ,383
-Mongolia ,613
-Montenegro ,278
-Montserrat ,43
-Morocco ,494
-Mozambique ,129
-Myanmar ,330
-Namibia ,81
-Nauru ,91
-Nepal ,344
-Netherlands ,"8,504"
-New Caledonia ,59
-New Zealand ,"4,201"
-Nicaragua ,116
-Niger ,"1,641"
-Nigeria ,447
-Niue ,116
-Norfolk Island ,245
-North Korea ,"1,347"
-Northern Mariana Islands ,131
-Norway ,"5,483"
-Oman ,288
-Pakistan ,"1,136"
-Palau ,88
-Palestine ,664
-Panama ,307
-Papua New Guinea ,120
-Paraguay ,206
-Peru ,"1,948"
-Philippines ,"3,059"
-Pitcairn Islands ,82
-Poland ,"9,037"
-Portugal ,"3,612"
-Puerto Rico ,514
-Qatar ,402
-Republic of the Congo ,373
-Romania ,"5,314"
-Russia ,"15,666"
-Rwanda ,88
-Réunion ,135
-Saint Barthélemy ,69
-Saint Helena ,94
-Saint Kitts and Nevis ,62
-Saint Lucia ,123
-Saint Martin ,59
-Saint Pierre and Miquelon ,80
-Saint Vincent and the Grenadines ,116
-Samoa ,63
-San Marino ,167
-Saudi Arabia ,"1,537"
-Senegal ,56
-Serbia ,"2,317"
-Seychelles ,170
-Sierra Leone ,70
-Singapore ,"2,456"
-Sint Maarten ,62
-Slovakia ,"2,241"
-Slovenia ,"1,133"
-Solomon Islands ,65
-Somalia ,467
-South Africa ,"3,057"
-South Georgia ,737
-South Korea ,"2,713"
-South Sudan ,56
-Spain ,"4,099"
-Sri Lanka ,502
-Sudan ,100
-Suriname ,71
-Svalbard and Jan Mayen ,107
-Swaziland ,154
-Sweden ,"8,835"
-Switzerland ,"2,567"
-Syria ,490
-São Tomé and Príncipe ,48
-Taiwan ,"1,450"
-Tajikistan ,181
-Tanzania ,79
-Thailand ,"2,379"
-Timor-Leste ,52
-Togo ,163
-Tokelau ,70
-Tonga ,92
-Trinidad and Tobago ,212
-Tunisia ,411
-Turkey ,"5,502"
-Turkmenistan ,133
-Turks and Caicos Islands ,63
-Tuvalu ,104
-Uganda ,"1,145"
-Ukraine ,"4,164"
-United Arab Emirates ,"1,463"
-United Kingdom ,"41,481"
-United States ,"183,628"
-United States Minor Outlying Islands ,"1,537"
-United States Virgin Islands ,939
-Uruguay ,692
-Uzbekistan ,440
-Vanuatu ,77
-Vatican City ,"1,637"
-Venezuela ,679
-Vietnam ,"2,375"
-Wallis and Futuna ,130
-Western Sahara ,162
-Yemen ,250
-Zambia ,204
-Zimbabwe ,"1,251"
+Country,Users,Lat,Long
+No Country,"360,941",#N/A,#N/A
+Afghanistan,"1,203",33.93911,67.709953
+Aland Islands,231,#N/A,#N/A
+Albania,641,41.153332,20.168331
+Algeria,829,28.033886,1.659626
+American Samoa,338,-14.270972,-170.132217
+Andorra,216,42.546245,1.601554
+Angola,201,-11.202692,17.873887
+Anguilla,82,18.220554,-63.068615
+Antarctica,"2,437",-75.250973,-0.071389
+Antigua and Barbuda,129,17.060816,-61.796428
+Argentina,"3,947",-38.416097,-63.616672
+Armenia,449,40.069099,45.038189
+Aruba,159,12.52111,-69.968338
+Australia,"20,016",-25.274398,133.775136
+Austria,"2,858",47.516231,14.550072
+Azerbaijan,515,40.143105,47.576927
+Bahamas,421,25.03428,-77.39628
+Bahrain,612,25.930414,50.637772
+Bangladesh,716,23.684994,90.356331
+Barbados,133,13.193887,-59.543198
+Belarus,"1,630",53.709807,27.953389
+Belgium,"3,381",50.503887,4.469936
+Belize,102,17.189877,-88.49765
+Benin,43,9.30769,2.315834
+Bermuda,149,32.321384,-64.75737
+Bhutan,167,27.514162,90.433601
+Bolivia,216,-16.290154,-63.588653
+"Bonaire, Sint Eustatius and Saba",122,#N/A,#N/A
+Bosnia and Herzegovina,"1,015",43.915886,17.679076
+Botswana,173,-22.328474,24.684866
+Bouvet Island,71,-54.423199,3.413194
+Brazil,"13,053",-14.235004,-51.92528
+British Indian Ocean Territory,112,-6.343194,71.876519
+British Virgin Islands,355,18.420695,-64.639968
+Brunei,293,4.535277,114.727669
+Bulgaria,"1,770",42.733883,25.48583
+Burkina Faso,120,12.238333,-1.561593
+Burundi,53,-3.373056,29.918886
+Cambodia,211,12.565679,104.990963
+Cameroon,71,7.369722,12.354722
+Canada,"31,686",56.130366,-106.346771
+Cape Verde,70,16.002082,-24.013197
+Cayman Islands,114,19.513469,-80.566956
+Central African Republic,141,6.611111,20.939444
+Chad,793,15.454166,18.732207
+Chile,"1,788",-35.675147,-71.542969
+China,"7,522",35.86166,104.195397
+Christmas Island,"1,050",-10.447525,105.690449
+Cocos,Keeling Islands ,#N/A,#N/A
+Colombia,986,4.570868,-74.297333
+Comoros,15,-11.875001,43.872219
+Cook Islands,286,-21.236736,-159.777671
+Costa Rica,528,9.748917,-83.753428
+Croatia,"1,821",45.1,15.2
+Cuba,483,21.521757,-77.781167
+Curaçao,59,#N/A,#N/A
+Cyprus,463,35.126413,33.429859
+Czech Republic,"4,011",49.817492,15.472962
+DR Congo,361,#N/A,#N/A
+Denmark,"4,778",56.26392,9.501785
+Djibouti,321,11.825138,42.590275
+Dominica,56,15.414999,-61.370976
+Dominican Republic,258,18.735693,-70.162651
+Ecuador,408,-1.831239,-78.183406
+Egypt,775,26.820553,30.802498
+El Salvador,258,13.794185,-88.89653
+Equatorial Guinea,38,1.650801,10.267895
+Eritrea,53,15.179384,39.782334
+Estonia,"2,008",58.595272,25.013607
+Ethiopia,217,9.145,40.489673
+Falkland Islands,136,#N/A,#N/A
+Faroe Islands,346,61.892635,-6.911806
+Fiji,617,-16.578193,179.414413
+Finland,"6,396",61.92411,25.748151
+France,"7,968",46.227638,2.213749
+French Guiana,36,3.933889,-53.125782
+French Polynesia,58,-17.679742,-149.406843
+French Southern and Antarctic Lands,56,#N/A,#N/A
+Gabon,131,-0.803689,11.609444
+Gambia,65,13.443182,-15.310139
+Georgia,834,42.315407,43.356892
+Germany,"18,517",51.165691,10.451526
+Ghana,98,7.946527,-1.023194
+Gibraltar,103,36.137741,-5.345374
+Greece,"2,762",39.074208,21.824312
+Greenland,292,71.706936,-42.604303
+Grenada,66,12.262776,-61.604171
+Guadeloupe,76,16.995971,-62.067641
+Guam,133,13.444304,144.793731
+Guatemala,246,15.783471,-90.230759
+Guernsey,102,49.465691,-2.585278
+Guinea,41,9.945587,-9.696645
+Guinea-Bissau,30,11.803749,-15.180413
+Guyana,47,4.860416,-58.93018
+Haiti,153,18.971187,-72.285215
+Heard Island and McDonald Islands,702,-53.08181,73.504158
+Honduras,201,15.199999,-86.241905
+Hong Kong,"1,667",22.396428,114.109497
+Hungary,"3,058",47.162494,19.503304
+Iceland,"1,155",64.963051,-19.020835
+India,"4,645",20.593684,78.96288
+Indonesia,"5,608",-0.789275,113.921327
+Iran,"1,294",32.427908,53.688046
+Iraq,854,33.223191,43.679291
+Ireland,"2,923",53.41291,-8.24389
+Isle of Man,733,54.236107,-4.548056
+Israel,"2,631",31.046051,34.851612
+Italy,"4,254",41.87194,12.56738
+Ivory Coast,109,#N/A,#N/A
+Jamaica,663,18.109581,-77.297508
+Japan,"8,795",36.204824,138.252924
+Jersey,143,49.214439,-2.13125
+Jordan,435,30.585164,36.238414
+Kazakhstan,"1,305",48.019573,66.923684
+Kenya,161,-0.023559,37.906193
+Kiribati,81,-3.370417,-168.734039
+Kosovo,110,42.602636,20.902977
+Kuwait,520,29.31166,47.481766
+Kyrgyzstan,374,41.20438,74.766098
+Laos,109,19.85627,102.495496
+Latvia,"1,844",56.879635,24.603189
+Lebanon,431,33.854721,35.862285
+Lesotho,31,-29.609988,28.233608
+Liberia,107,6.428055,-9.429499
+Libya,102,26.3351,17.228331
+Liechtenstein,221,47.166,9.555373
+Lithuania,"2,372",55.169438,23.881275
+Luxembourg,459,49.815273,6.129583
+Macau,154,22.198745,113.543873
+Macedonia,669,#N/A,#N/A
+Madagascar,299,-18.766947,46.869107
+Malawi,50,-13.254308,34.301525
+Malaysia,"3,094",4.210484,101.975766
+Maldives,142,3.202778,73.22068
+Mali,56,17.570692,-3.996166
+Malta,378,35.937496,14.375416
+Marshall Islands,72,7.131474,171.184478
+Martinique,53,14.641528,-61.024174
+Mauritania,29,21.00789,-10.940835
+Mauritius,99,-20.348404,57.552152
+Mayotte,38,-12.8275,45.166244
+Mexico,"2,663",23.634501,-102.552784
+Micronesia,120,7.425554,150.550812
+Moldova,590,47.411631,28.369885
+Monaco,383,43.750298,7.412841
+Mongolia,613,46.862496,103.846656
+Montenegro,278,42.708678,19.37439
+Montserrat,43,16.742498,-62.187366
+Morocco,494,31.791702,-7.09262
+Mozambique,129,-18.665695,35.529562
+Myanmar,330,#N/A,#N/A
+Namibia,81,-22.95764,18.49041
+Nauru,91,-0.522778,166.931503
+Nepal,344,28.394857,84.124008
+Netherlands,"8,504",52.132633,5.291266
+New Caledonia,59,-20.904305,165.618042
+New Zealand,"4,201",-40.900557,174.885971
+Nicaragua,116,12.865416,-85.207229
+Niger,"1,641",17.607789,8.081666
+Nigeria,447,9.081999,8.675277
+Niue,116,-19.054445,-169.867233
+Norfolk Island,245,-29.040835,167.954712
+North Korea,"1,347",40.339852,127.510093
+Northern Mariana Islands,131,17.33083,145.38469
+Norway,"5,483",60.472024,8.468946
+Oman,288,21.512583,55.923255
+Pakistan,"1,136",30.375321,69.345116
+Palau,88,7.51498,134.58252
+Palestine,664,#N/A,#N/A
+Panama,307,8.537981,-80.782127
+Papua New Guinea,120,-6.314993,143.95555
+Paraguay,206,-23.442503,-58.443832
+Peru,"1,948",-9.189967,-75.015152
+Philippines,"3,059",12.879721,121.774017
+Pitcairn Islands,82,-24.703615,-127.439308
+Poland,"9,037",51.919438,19.145136
+Portugal,"3,612",39.399872,-8.224454
+Puerto Rico,514,18.220833,-66.590149
+Qatar,402,25.354826,51.183884
+Republic of the Congo,373,#N/A,#N/A
+Romania,"5,314",45.943161,24.96676
+Russia,"15,666",61.52401,105.318756
+Rwanda,88,-1.940278,29.873888
+Réunion,135,#N/A,#N/A
+Saint Barthélemy,69,#N/A,#N/A
+Saint Helena,94,-24.143474,-10.030696
+Saint Kitts and Nevis,62,17.357822,-62.782998
+Saint Lucia,123,13.909444,-60.978893
+Saint Martin,59,#N/A,#N/A
+Saint Pierre and Miquelon,80,46.941936,-56.27111
+Saint Vincent and the Grenadines,116,12.984305,-61.287228
+Samoa,63,-13.759029,-172.104629
+San Marino,167,43.94236,12.457777
+Saudi Arabia,"1,537",23.885942,45.079162
+Senegal,56,14.497401,-14.452362
+Serbia,"2,317",44.016521,21.005859
+Seychelles,170,-4.679574,55.491977
+Sierra Leone,70,8.460555,-11.779889
+Singapore,"2,456",1.352083,103.819836
+Sint Maarten,62,#N/A,#N/A
+Slovakia,"2,241",48.669026,19.699024
+Slovenia,"1,133",46.151241,14.995463
+Solomon Islands,65,-9.64571,160.156194
+Somalia,467,5.152149,46.199616
+South Africa,"3,057",-30.559482,22.937506
+South Georgia,737,#N/A,#N/A
+South Korea,"2,713",35.907757,127.766922
+South Sudan,56,#N/A,#N/A
+Spain,"4,099",40.463667,-3.74922
+Sri Lanka,502,7.873054,80.771797
+Sudan,100,12.862807,30.217636
+Suriname,71,3.919305,-56.027783
+Svalbard and Jan Mayen,107,77.553604,23.670272
+Swaziland,154,-26.522503,31.465866
+Sweden,"8,835",60.128161,18.643501
+Switzerland,"2,567",46.818188,8.227512
+Syria,490,34.802075,38.996815
+São Tomé and Príncipe,48,#N/A,#N/A
+Taiwan,"1,450",23.69781,120.960515
+Tajikistan,181,38.861034,71.276093
+Tanzania,79,-6.369028,34.888822
+Thailand,"2,379",15.870032,100.992541
+Timor-Leste,52,-8.874217,125.727539
+Togo,163,8.619543,0.824782
+Tokelau,70,-8.967363,-171.855881
+Tonga,92,-21.178986,-175.198242
+Trinidad and Tobago,212,10.691803,-61.222503
+Tunisia,411,33.886917,9.537499
+Turkey,"5,502",38.963745,35.243322
+Turkmenistan,133,38.969719,59.556278
+Turks and Caicos Islands,63,21.694025,-71.797928
+Tuvalu,104,-7.109535,177.64933
+Uganda,"1,145",1.373333,32.290275
+Ukraine,"4,164",48.379433,31.16558
+United Arab Emirates,"1,463",23.424076,53.847818
+United Kingdom,"41,481",55.378051,-3.435973
+United States,"183,628",37.09024,-95.712891
+United States Minor Outlying Islands,"1,537",#N/A,#N/A
+United States Virgin Islands,939,#N/A,#N/A
+Uruguay,692,-32.522779,-55.765835
+Uzbekistan,440,41.377491,64.585262
+Vanuatu,77,-15.376706,166.959158
+Vatican City,"1,637",41.902916,12.453389
+Venezuela,679,6.42375,-66.58973
+Vietnam,"2,375",14.058324,108.277199
+Wallis and Futuna,130,-13.768752,-177.156097
+Western Sahara,162,24.215527,-12.885834
+Yemen,250,15.552727,48.516388
+Zambia,204,-13.133897,27.849332
+Zimbabwe,"1,251",-19.015438,29.154857
