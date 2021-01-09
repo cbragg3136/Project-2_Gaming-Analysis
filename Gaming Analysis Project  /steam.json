@@ -1,0 +1,902 @@
+[
+    {
+        "Name": "Counter-Strike: Global Offensive",
+        "Current Players": "1020972",
+        "Peak Players": "1062971",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/",
+        "appid": "730",
+        "Tags": "['FPS', 'Shooter', 'Multiplayer', 'Competitive', 'Action', 'Team-Based', 'eSports', 'Tactical', 'First-Person', 'PvP', 'Online Co-Op', 'Co-op', 'Strategy', 'Military', 'War', 'Difficult', 'Trading', 'Realistic', 'Fast-Paced', 'Moddable']"
+    },
+    {
+        "Name": "Dota 2",
+        "Current Players": "542142",
+        "Peak Players": "639575",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/570/Dota_2/",
+        "appid": "570",
+        "Tags": "['Free to Play', 'MOBA', 'Multiplayer', 'Strategy', 'eSports', 'Team-Based', 'Competitive', 'Action', 'Online Co-Op', 'PvP', 'Difficult', 'Co-op', 'RTS', 'Tower Defense', 'Fantasy', 'RPG', 'Character Customization', 'Replay Value', 'Action RPG', 'Simulation']"
+    },
+    {
+        "Name": "PLAYERUNKNOWN'S BATTLEGROUNDS",
+        "Current Players": "174295",
+        "Peak Players": "425430",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/578080/PLAYERUNKNOWNS_BATTLEGROUNDS/",
+        "appid": "578080",
+        "Tags": "['Survival', 'Shooter', 'Multiplayer', 'Battle Royale', 'FPS', 'PvP', 'Third-Person Shooter', 'Action', 'Online Co-Op', 'Tactical', 'Co-op', 'First-Person', 'Strategy', 'Early Access', 'Competitive', 'Third Person', 'Team-Based', 'Difficult', 'Simulation', 'Stealth']"
+    },
+    {
+        "Name": "Cyberpunk 2077",
+        "Current Players": "122766",
+        "Peak Players": "147788",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+        "appid": "1091500",
+        "Tags": "['Cyberpunk', 'Open World', 'RPG', 'Futuristic', 'Sci-fi', 'Singleplayer', 'FPS', 'First-Person', 'Atmospheric', 'Exploration', 'Sexual Content', 'Story Rich', 'Nudity', 'Mature', 'Action', 'Violent', 'Great Soundtrack', 'Action RPG', 'Adventure', 'Immersive Sim']"
+    },
+    {
+        "Name": "Grand Theft Auto V",
+        "Current Players": "122556",
+        "Peak Players": "158237",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/",
+        "appid": "271590",
+        "Tags": "['Open World', 'Action', 'Multiplayer', 'Automobile Sim', 'Crime', 'Third Person', 'First-Person', 'Shooter', 'Adventure', 'Mature', 'Singleplayer', 'Third-Person Shooter', 'Racing', 'Atmospheric', 'Co-op', 'Sandbox', 'Funny', 'Great Soundtrack', 'Comedy', 'Moddable']"
+    },
+    {
+        "Name": "Source SDK Base 2013 Multiplayer",
+        "Current Players": "115986",
+        "Peak Players": "119466",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://steamcommunity.com/app/243750",
+        "appid": "243750",
+        "Tags": ""
+    },
+    {
+        "Name": "Rust",
+        "Current Players": "108140",
+        "Peak Players": "132528",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/252490/Rust/",
+        "appid": "252490",
+        "Tags": "['Survival', 'Crafting', 'Multiplayer', 'Open World', 'Open World Survival Craft', 'Building', 'Sandbox', 'PvP', 'Adventure', 'First-Person', 'Action', 'FPS', 'Nudity', 'Co-op', 'Shooter', 'Online Co-Op', 'Indie', 'Early Access', 'Post-apocalyptic', 'Simulation']"
+    },
+    {
+        "Name": "Tom Clancy's Rainbow Six Siege",
+        "Current Players": "92472",
+        "Peak Players": "111328",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/",
+        "appid": "359550",
+        "Tags": "['FPS', 'Hero Shooter', 'Multiplayer', 'Tactical', 'Shooter', 'Team-Based', 'Action', 'First-Person', 'Competitive', 'Co-op', 'Strategy', 'Realistic', 'Online Co-Op', 'Destruction', 'Physics', 'Psychological Horror', 'Atmospheric', 'Singleplayer', 'Massively Multiplayer', 'Casual']"
+    },
+    {
+        "Name": "Rocket League",
+        "Current Players": "82781",
+        "Peak Players": "99645",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/252950/Rocket_League/",
+        "appid": "252950",
+        "Tags": "['Multiplayer', 'Soccer', 'Competitive', 'Sports', 'Racing', 'Team-Based', 'Online Co-Op', 'Football', 'Fast-Paced', 'Co-op', 'Action', 'Funny', 'Great Soundtrack', 'Local Multiplayer', 'Split Screen', 'Local Co-Op', 'Singleplayer', '4 Player Local', 'Casual', 'Indie']"
+    },
+    {
+        "Name": "ARK: Survival Evolved",
+        "Current Players": "77078",
+        "Peak Players": "82211",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/346110/ARK_Survival_Evolved/",
+        "appid": "346110",
+        "Tags": "['Open World Survival Craft', 'Survival', 'Open World', 'Multiplayer', 'Dinosaurs', 'Crafting', 'Building', 'Adventure', 'Base Building', 'Co-op', 'Action', 'First-Person', 'Sandbox', 'Massively Multiplayer', 'Singleplayer', 'Early Access', 'RPG', 'Dragons', 'Sci-fi', 'Indie']"
+    },
+    {
+        "Name": "Apex Legends",
+        "Current Players": "76392",
+        "Peak Players": "107262",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1172470/Apex_Legends/",
+        "appid": "1172470",
+        "Tags": "['Free to Play', 'Battle Royale', 'First-Person', 'Shooter', 'Multiplayer', 'PvP', 'Hero Shooter', 'Team-Based', 'Action', 'Character Customization', 'Survival', 'Sci-fi', 'Funny', 'Tactical', 'Cyberpunk', 'Lore-Rich', 'Loot', 'FPS', 'Science', 'Cinematic']"
+    },
+    {
+        "Name": "Football Manager 2021",
+        "Current Players": "75727",
+        "Peak Players": "84879",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1263850/Football_Manager_2021/",
+        "appid": "1263850",
+        "Tags": "['Sports', 'Simulation', 'Management', 'Singleplayer', 'Football', 'Multiplayer', 'Soccer', 'Strategy', 'Sexual Content']"
+    },
+    {
+        "Name": "Team Fortress 2",
+        "Current Players": "71557",
+        "Peak Players": "88196",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/440/Team_Fortress_2/",
+        "appid": "440",
+        "Tags": "['Free to Play', 'Hero Shooter', 'Multiplayer', 'FPS', 'Shooter', 'Action', 'Class-Based', 'Team-Based', 'Funny', 'First-Person', 'Online Co-Op', 'Cartoony', 'Competitive', 'Trading', 'Co-op', 'Comedy', 'Robots', 'Tactical', 'Cartoon', 'Crafting']"
+    },
+    {
+        "Name": "Stardew Valley",
+        "Current Players": "63967",
+        "Peak Players": "72622",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+        "appid": "413150",
+        "Tags": "['Farming Sim', 'Life Sim', 'RPG', 'Pixel Graphics', 'Agriculture', 'Simulation', 'Relaxing', 'Multiplayer', 'Crafting', 'Sandbox', 'Indie', 'Building', 'Singleplayer', 'Casual', 'Open World', 'Great Soundtrack', '2D', 'Cute', 'Dating Sim', 'Fishing']"
+    },
+    {
+        "Name": "Destiny 2",
+        "Current Players": "56869",
+        "Peak Players": "79523",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1085660/Destiny_2/",
+        "appid": "1085660",
+        "Tags": "['PvP', 'PvE', 'Looter Shooter', 'Open World', 'FPS', 'Competitive', 'MMORPG', 'Shooter', 'First-Person', 'Lore-Rich', 'Sci-fi', 'Action', 'Space', 'Loot', 'Atmospheric', 'Co-op', 'Adventure', 'Free to Play', 'Cinematic', 'Massively Multiplayer']"
+    },
+    {
+        "Name": "Among Us",
+        "Current Players": "49294",
+        "Peak Players": "96919",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/945360/Among_Us/",
+        "appid": "945360",
+        "Tags": "['Multiplayer', 'Online Co-Op', 'Space', 'Social Deduction', 'Survival', 'Funny', '2D', 'Co-op', 'Psychological', 'Local Multiplayer', 'Cartoony', 'Casual', 'Colorful', 'Indie', 'Sci-fi', 'Minigames', 'Aliens', 'Top-Down', 'Local Co-Op', 'PvP']"
+    },
+    {
+        "Name": "Sea of Thieves",
+        "Current Players": "42677",
+        "Peak Players": "48207",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1172620/Sea_of_Thieves/",
+        "appid": "1172620",
+        "Tags": "['Adventure', 'Action', 'Multiplayer', 'Pirates', 'Open World', 'Co-op', 'Sailing', 'PvP', 'Online Co-Op', 'First-Person', 'Exploration', 'Naval', 'Funny', 'PvE', 'Massively Multiplayer', 'Atmospheric', 'Swordplay', 'Great Soundtrack', 'FPS', 'Singleplayer']"
+    },
+    {
+        "Name": "Euro Truck Simulator 2",
+        "Current Players": "42458",
+        "Peak Players": "45721",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/227300/Euro_Truck_Simulator_2/",
+        "appid": "227300",
+        "Tags": "['Simulation', 'Driving', 'Automobile Sim', 'Open World', 'Realistic', 'Relaxing', 'Singleplayer', 'Moddable', 'Exploration', 'First-Person', 'Economy', 'Atmospheric', 'Adventure', 'Indie', 'Management', 'Casual', 'TrackIR', 'Sandbox', 'Racing', 'RPG']"
+    },
+    {
+        "Name": "Dead by Daylight",
+        "Current Players": "42122",
+        "Peak Players": "47440",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/381210/Dead_by_Daylight/",
+        "appid": "381210",
+        "Tags": "['Horror', 'Survival Horror', 'Multiplayer', 'Online Co-Op', 'Survival', 'Stealth', 'Gore', 'Blood', 'Co-op', 'Third Person', 'Team-Based', 'Violent', 'First-Person', 'Action', 'Atmospheric', 'Psychological Horror', 'Strategy', 'Comedy', 'Mature', 'Difficult']"
+    },
+    {
+        "Name": "Terraria",
+        "Current Players": "41348",
+        "Peak Players": "42705",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/105600/Terraria/",
+        "appid": "105600",
+        "Tags": "['Open World Survival Craft', 'Sandbox', 'Survival', '2D', 'Multiplayer', 'Adventure', 'Crafting', 'Building', 'Pixel Graphics', 'Exploration', 'Co-op', 'Open World', 'Indie', 'Online Co-Op', 'Action', 'RPG', 'Singleplayer', 'Platformer', 'Replay Value', 'Atmospheric']"
+    },
+    {
+        "Name": "Wallpaper Engine",
+        "Current Players": "40940",
+        "Peak Players": "60287",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/431960/Wallpaper_Engine/",
+        "appid": "431960",
+        "Tags": "['Utilities', 'Mature', 'Software', 'Anime', 'Design & Illustration', 'Animation & Modeling', 'Memes', 'Early Access', 'Cute', 'Casual', 'Funny', 'Action', 'Singleplayer', 'Music', 'Indie', 'Sandbox', 'NSFW', 'Photo Editing', 'Game Development', 'Horror']"
+    },
+    {
+        "Name": "Garry's Mod",
+        "Current Players": "39809",
+        "Peak Players": "40588",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/4000/Garrys_Mod/",
+        "appid": "4000",
+        "Tags": "['Sandbox', 'Multiplayer', 'Funny', 'Moddable', 'Building', 'Comedy', 'Co-op', 'Mod', 'First-Person', 'Physics', 'Simulation', 'Online Co-Op', 'FPS', 'Singleplayer', 'Action', 'Shooter', 'Animation & Modeling', 'Indie', 'Massively Multiplayer', 'Adventure']"
+    },
+    {
+        "Name": "DayZ",
+        "Current Players": "39577",
+        "Peak Players": "42503",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/221100/DayZ/",
+        "appid": "221100",
+        "Tags": "['Survival', 'Zombies', 'Multiplayer', 'Open World', 'Action', 'PvP', 'Shooter', 'Massively Multiplayer', 'Horror', 'Simulation', 'Early Access', 'Post-apocalyptic', 'FPS', 'First-Person', 'Survival Horror', 'Sandbox', 'Adventure', 'Co-op', 'Indie', 'Atmospheric']"
+    },
+    {
+        "Name": "Sid Meier's Civilization VI",
+        "Current Players": "39277",
+        "Peak Players": "44235",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/289070/Sid_Meiers_Civilization_VI/",
+        "appid": "289070",
+        "Tags": "['Strategy', 'Turn-Based Strategy', 'Historical', 'Multiplayer', 'Singleplayer', 'Turn-Based', 'Grand Strategy', '4X', 'War', 'Simulation', 'Tactical', 'City Builder', 'Great Soundtrack', 'Moddable', 'Online Co-Op', 'Building', 'Co-op', 'Management', 'Hex Grid', 'Atmospheric']"
+    },
+    {
+        "Name": "PAYDAY 2",
+        "Current Players": "36639",
+        "Peak Players": "40092",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/218620/PAYDAY_2/",
+        "appid": "218620",
+        "Tags": "['Co-op', 'Action', 'FPS', 'Heist', 'Looter Shooter', 'Online Co-Op', 'Stealth', 'Multiplayer', 'Crime', 'Shooter', 'Team-Based', 'First-Person', 'Great Soundtrack', 'Gun Customization', 'Tactical', 'PvE', 'Strategy', 'Singleplayer', 'Simulation', 'Funny']"
+    },
+    {
+        "Name": "Bloons TD 6",
+        "Current Players": "35436",
+        "Peak Players": "43629",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/960090/Bloons_TD_6/",
+        "appid": "960090",
+        "Tags": "['Strategy', 'Tower Defense', 'Singleplayer', 'Multiplayer', 'Co-op', 'Online Co-Op', 'Family Friendly', 'Casual', '3D', 'Sandbox', 'Cartoony', 'Difficult', 'Funny', 'Great Soundtrack', 'Survival', 'Action', '2D', 'Cute', 'Indie', 'Adventure']"
+    },
+    {
+        "Name": "Warframe",
+        "Current Players": "34996",
+        "Peak Players": "46900",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/230410/Warframe/",
+        "appid": "230410",
+        "Tags": "['Free to Play', 'Looter Shooter', 'Action', 'Co-op', 'Multiplayer', 'Third-Person Shooter', 'Sci-fi', 'Ninja', 'Shooter', 'Parkour', 'Space', 'Online Co-Op', 'Futuristic', 'Third Person', 'Massively Multiplayer', 'PvE', 'RPG', 'Hack and Slash', 'Singleplayer', 'FPS']"
+    },
+    {
+        "Name": "War Thunder",
+        "Current Players": "34297",
+        "Peak Players": "35926",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/236390/War_Thunder/",
+        "appid": "236390",
+        "Tags": "['Free to Play', 'World War II', 'Multiplayer', 'Simulation', 'War', 'Flight', 'Tanks', 'Military', 'Massively Multiplayer', 'Action', 'Realistic', 'Historical', 'Shooter', 'Team-Based', 'Co-op', 'Strategy', 'Arcade', 'FPS', 'Open World', 'TrackIR']"
+    },
+    {
+        "Name": "World of Tanks Blitz",
+        "Current Players": "33215",
+        "Peak Players": "33736",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/444200/World_of_Tanks_Blitz/",
+        "appid": "444200",
+        "Tags": "['Tanks', 'Free to Play', 'Action', 'Multiplayer', 'World War II', 'Massively Multiplayer', 'War', 'Shooter', 'Strategy', 'PvP', 'Military', 'Online Co-Op', 'Simulation', 'Competitive', 'Arcade', 'FPS', 'Singleplayer', 'Psychological Horror', 'Open World', 'First-Person']"
+    },
+    {
+        "Name": "Hearts of Iron IV",
+        "Current Players": "30966",
+        "Peak Players": "32106",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/394360/Hearts_of_Iron_IV/",
+        "appid": "394360",
+        "Tags": "['Strategy', 'World War II', 'Grand Strategy', 'Historical', 'War', 'Military', 'Alternate History', 'Multiplayer', 'Simulation', 'Tactical', 'Real-Time with Pause', 'RTS', 'Singleplayer', 'Diplomacy', 'Sandbox', 'Co-op', 'Great Soundtrack', 'Open World', 'Action', 'Casual']"
+    },
+    {
+        "Name": "Total War: WARHAMMER II",
+        "Current Players": "30659",
+        "Peak Players": "32901",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/",
+        "appid": "594570",
+        "Tags": "['Strategy', 'Fantasy', 'Turn-Based Strategy', 'RTS', 'Grand Strategy', 'War', 'Multiplayer', 'Games Workshop', 'Action', 'Turn-Based', 'Singleplayer', 'Dark Fantasy', 'Co-op', 'Tactical', 'Real Time Tactics', 'Story Rich', 'Atmospheric', 'Dinosaurs', 'Great Soundtrack', 'Warhammer 40K']"
+    },
+    {
+        "Name": "The Witcher 3: Wild Hunt",
+        "Current Players": "30579",
+        "Peak Players": "36239",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/292030/The_Witcher_3_Wild_Hunt/",
+        "appid": "292030",
+        "Tags": "['Open World', 'RPG', 'Story Rich', 'Atmospheric', 'Mature', 'Fantasy', 'Adventure', 'Singleplayer', 'Choices Matter', 'Nudity', 'Great Soundtrack', 'Third Person', 'Action', 'Medieval', 'Multiple Endings', 'Action RPG', 'Dark Fantasy', 'Magic', 'Dark', 'Sandbox']"
+    },
+    {
+        "Name": "Farming Simulator 19",
+        "Current Players": "30111",
+        "Peak Players": "31628",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/787860/Farming_Simulator_19/",
+        "appid": "787860",
+        "Tags": "['Simulation', 'Farming Sim', 'Multiplayer', 'Agriculture', 'Realistic', 'Open World', 'Driving', 'Automobile Sim', 'Singleplayer', 'Management', 'Moddable', 'Co-op', 'Resource Management', 'Relaxing', 'First-Person', 'Online Co-Op', 'Economy', 'Atmospheric', 'Strategy', 'Family Friendly']"
+    },
+    {
+        "Name": "Monster Hunter: World",
+        "Current Players": "29405",
+        "Peak Players": "51260",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/582010/Monster_Hunter_World/",
+        "appid": "582010",
+        "Tags": "['Co-op', 'Multiplayer', 'Action', 'Open World', 'RPG', 'Third Person', 'Character Customization', 'Adventure', 'Fantasy', 'Singleplayer', 'Difficult', 'Action RPG', 'Exploration', 'Great Soundtrack', 'Replay Value', 'Atmospheric', 'Hack and Slash', 'JRPG', 'Souls-like', 'MMORPG']"
+    },
+    {
+        "Name": "7 Days to Die",
+        "Current Players": "27832",
+        "Peak Players": "31171",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/251570/7_Days_to_Die/",
+        "appid": "251570",
+        "Tags": "['Survival', 'Zombies', 'Voxel', 'Open World', 'Post-apocalyptic', 'Open World Survival Craft', 'FPS', 'Action', 'Sandbox', 'Multiplayer', 'Building', 'Simulation', 'Online Co-Op', 'Exploration', 'Singleplayer', 'Survival Horror', 'RPG', 'Procedural Generation', 'Character Customization', 'Early Access']"
+    },
+    {
+        "Name": "EA SPORTS\u2122 FIFA 21 ",
+        "Current Players": "26931",
+        "Peak Players": "28709",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1313860/EA_SPORTS_FIFA_21/",
+        "appid": "1313860",
+        "Tags": "['Sports', 'Soccer', 'PvP', 'Competitive', 'Football', 'Runner', 'Simulation', 'eSports', 'Multiplayer', 'Local Multiplayer', 'Realistic', 'Controller', 'Online Co-Op', 'Local Co-Op', 'Singleplayer', 'Modern', 'Co-op', 'Casual', 'Action', 'Great Soundtrack']"
+    },
+    {
+        "Name": "Hades",
+        "Current Players": "26390",
+        "Peak Players": "29728",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1145360/Hades/",
+        "appid": "1145360",
+        "Tags": "['Action Roguelike', 'Action', 'Indie', 'RPG', 'Roguelite', 'Hack and Slash', 'Great Soundtrack', 'Singleplayer', 'Dungeon Crawler', 'Roguelike', 'Mythology', 'Story Rich', 'Replay Value', 'Isometric', 'Action RPG', 'Difficult', 'Hand-drawn', 'Atmospheric', 'Dating Sim', 'Perma Death']"
+    },
+    {
+        "Name": "The Elder Scrolls Online",
+        "Current Players": "25108",
+        "Peak Players": "26668",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/306130/The_Elder_Scrolls_Online/",
+        "appid": "306130",
+        "Tags": "['RPG', 'MMORPG', 'Open World', 'Massively Multiplayer', 'Multiplayer', 'Fantasy', 'Adventure', 'First-Person', 'Exploration', 'Story Rich', 'Third Person', 'Magic', 'Action', 'Co-op', 'Atmospheric', 'Great Soundtrack', 'Action RPG', 'Singleplayer', 'Sandbox', 'Character Customization']"
+    },
+    {
+        "Name": "Spacewar",
+        "Current Players": "24239",
+        "Peak Players": "24563",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://steamcommunity.com/app/480",
+        "appid": "480",
+        "Tags": ""
+    },
+    {
+        "Name": "Unturned",
+        "Current Players": "23884",
+        "Peak Players": "24197",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/304930/Unturned/",
+        "appid": "304930",
+        "Tags": "['Free to Play', 'Survival', 'Zombies', 'Open World Survival Craft', 'Multiplayer', 'Open World', 'Adventure', 'Crafting', 'Action', 'First-Person', 'Co-op', 'Sandbox', 'Shooter', 'Post-apocalyptic', 'FPS', 'Singleplayer', 'Massively Multiplayer', 'Indie', 'Casual', 'Atmospheric']"
+    },
+    {
+        "Name": "Football Manager 2020",
+        "Current Players": "23842",
+        "Peak Players": "26185",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1100600/Football_Manager_2020/",
+        "appid": "1100600",
+        "Tags": "['Simulation', 'Sports', 'Management', 'Soccer', 'Multiplayer', 'Football', 'Strategy', 'Singleplayer']"
+    },
+    {
+        "Name": "Age of Empires II: Definitive Edition",
+        "Current Players": "23303",
+        "Peak Players": "31199",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/813780/Age_of_Empires_II_Definitive_Edition/",
+        "appid": "813780",
+        "Tags": "['Strategy', 'RTS', 'City Builder', 'Multiplayer', 'Historical', 'Medieval', 'Singleplayer', 'Base Building', 'Classic', 'Resource Management', 'Remake', 'Real-Time', 'Tactical', 'Co-op', 'Action', 'Replay Value', '2D', 'Isometric', 'Adventure', 'Great Soundtrack']"
+    },
+    {
+        "Name": "Black Desert Online",
+        "Current Players": "22529",
+        "Peak Players": "22935",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/582660/Black_Desert_Online/",
+        "appid": "582660",
+        "Tags": "['MMORPG', 'Massively Multiplayer', 'RPG', 'Open World', 'Character Customization', 'Adventure', 'Fantasy', 'Action', 'PvP', 'Multiplayer', 'Strategy', 'Sandbox', 'Simulation', 'Third Person', 'Hack and Slash', 'Co-op', 'Fishing', 'Female Protagonist', 'Violent', 'PvE']"
+    },
+    {
+        "Name": "The Elder Scrolls V: Skyrim Special Edition",
+        "Current Players": "22421",
+        "Peak Players": "24591",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/489830/The_Elder_Scrolls_V_Skyrim_Special_Edition/",
+        "appid": "489830",
+        "Tags": "['Open World', 'RPG', 'Adventure', 'Singleplayer', 'Fantasy', 'Character Customization', 'Dragons', 'Moddable', 'Story Rich', 'Magic', 'First-Person', 'Action', 'Atmospheric', 'Great Soundtrack', 'Third Person', 'Stealth', 'Classic', 'Remake', 'Female Protagonist', 'Walking Simulator']"
+    },
+    {
+        "Name": "Phasmophobia",
+        "Current Players": "22357",
+        "Peak Players": "33975",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/739630/Phasmophobia/",
+        "appid": "739630",
+        "Tags": "['Horror', 'Online Co-Op', 'Multiplayer', 'Psychological Horror', 'Co-op', 'Supernatural', 'VR', 'First-Person', 'Investigation', 'Dark', 'Mystery', 'Detective', 'Demons', 'Early Access', 'Indie', 'Thriller', '3D', 'Action', 'Tactical', 'Lovecraftian']"
+    },
+    {
+        "Name": "Sid Meier's Civilization V",
+        "Current Players": "22206",
+        "Peak Players": "24527",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/8930/Sid_Meiers_Civilization_V/",
+        "appid": "8930",
+        "Tags": "['Turn-Based Strategy', 'Strategy', 'Turn-Based', 'Multiplayer', 'Historical', '4X', 'Addictive', 'Singleplayer', 'Hex Grid', 'Grand Strategy', 'Replay Value', 'Co-op', 'Tactical', 'Economy', 'Diplomacy', 'Moddable', 'Simulation', 'Classic', 'Great Soundtrack', 'Touch-Friendly']"
+    },
+    {
+        "Name": "Europa Universalis IV",
+        "Current Players": "21566",
+        "Peak Players": "23807",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/236850/Europa_Universalis_IV/",
+        "appid": "236850",
+        "Tags": "['Grand Strategy', 'Historical', 'Simulation', 'Alternate History', 'Economy', 'Military', 'Sandbox', 'Political', 'Diplomacy', 'Nonlinear', 'Real-Time with Pause', 'Moddable', 'Strategy', 'Replay Value', 'Management', 'Singleplayer', 'Multiplayer', 'Resource Management', 'Great Soundtrack', 'Education']"
+    },
+    {
+        "Name": "Left 4 Dead 2",
+        "Current Players": "21537",
+        "Peak Players": "27042",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/550/Left_4_Dead_2/",
+        "appid": "550",
+        "Tags": "['Zombies', 'Co-op', 'FPS', 'Multiplayer', 'Shooter', 'Action', 'Online Co-Op', 'Survival', 'Horror', 'First-Person', 'Gore', 'Team-Based', 'Survival Horror', 'Moddable', 'Post-apocalyptic', 'Singleplayer', 'Adventure', 'Local Co-Op', 'Replay Value', 'Tactical']"
+    },
+    {
+        "Name": "Counter-Strike",
+        "Current Players": "21405",
+        "Peak Players": "22784",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/10/CounterStrike/",
+        "appid": "10",
+        "Tags": "['Action', 'FPS', 'Multiplayer', 'Shooter', 'Classic', 'Team-Based', 'First-Person', 'Competitive', 'Tactical', \"1990's\", 'eSports', 'PvP', 'Old School', 'Military', 'Strategy', 'Survival', 'Score Attack', '1980s', 'Assassin', 'Violent']"
+    },
+    {
+        "Name": "Brawlhalla",
+        "Current Players": "21003",
+        "Peak Players": "22128",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/291550/Brawlhalla/",
+        "appid": "291550",
+        "Tags": "['Free to Play', 'Multiplayer', 'Fighting', '2D', '2D Fighter', 'Action', 'Local Multiplayer', 'Platformer', 'Co-op', 'Controller', 'Online Co-Op', 'Local Co-Op', '4 Player Local', \"Beat 'em up\", 'Indie', 'Singleplayer', 'Massively Multiplayer', 'Early Access', 'Survival', 'Adventure']"
+    },
+    {
+        "Name": "Don't Starve Together",
+        "Current Players": "20855",
+        "Peak Players": "32214",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/322330/Dont_Starve_Together/",
+        "appid": "322330",
+        "Tags": "['Survival', 'Open World Survival Craft', 'Multiplayer', 'Co-op', 'Open World', 'Adventure', 'Crafting', 'Online Co-Op', 'Sandbox', 'Difficult', 'Indie', '2D', 'Funny', 'Atmospheric', 'Survival Horror', 'Strategy', 'Singleplayer', 'Horror', 'Action', 'Simulation']"
+    },
+    {
+        "Name": "The Forest",
+        "Current Players": "20687",
+        "Peak Players": "27230",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/242760/The_Forest/",
+        "appid": "242760",
+        "Tags": "['Open World Survival Craft', 'Survival', 'Open World', 'Horror', 'Crafting', 'Adventure', 'Building', 'Survival Horror', 'First-Person', 'Action', 'Exploration', 'Sandbox', 'Atmospheric', 'Simulation', 'Singleplayer', 'Indie', 'Realistic', 'Gore', 'Early Access', 'Zombies']"
+    },
+    {
+        "Name": "The Sims\u2122 4",
+        "Current Players": "20444",
+        "Peak Players": "23878",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1222670/The_Sims_4/",
+        "appid": "1222670",
+        "Tags": "['Life Sim', 'Character Customization', 'Simulation', 'Building', 'Casual', 'Romance', 'Relaxing', 'Funny', 'Immersive Sim', 'Cute', 'Singleplayer', 'Family Friendly', 'Cartoony', 'Fantasy', 'Atmospheric', 'Beautiful', 'Sexual Content', 'Realistic', 'Multiplayer', 'LGBTQ+']"
+    },
+    {
+        "Name": "Arma 3",
+        "Current Players": "20409",
+        "Peak Players": "22835",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/107410/Arma_3/",
+        "appid": "107410",
+        "Tags": "['Action', 'Multiplayer', 'Military', 'Simulation', 'Shooter', 'First-Person', 'Realistic', 'Open World', 'Tactical', 'FPS', 'Co-op', 'War', 'Strategy', 'Sandbox', 'Moddable', 'Combat', 'Online Co-Op', 'Singleplayer', 'Team-Based', 'Third-Person Shooter']"
+    },
+    {
+        "Name": "Red Dead Redemption 2",
+        "Current Players": "20170",
+        "Peak Players": "26781",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/",
+        "appid": "1174180",
+        "Tags": "['Adventure', 'Open World', 'Action', 'Western', 'Story Rich', 'Multiplayer', 'Shooter', 'Realistic', 'Third-Person Shooter', 'Singleplayer', 'Atmospheric', 'Horses', 'Beautiful', 'Sandbox', 'Great Soundtrack', 'Third Person', 'Mature', 'First-Person', 'Gore', 'FPS']"
+    },
+    {
+        "Name": "RimWorld",
+        "Current Players": "19423",
+        "Peak Players": "20332",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/294100/RimWorld/",
+        "appid": "294100",
+        "Tags": "['Colony Sim', 'Base Building', 'Survival', 'Strategy', 'Sandbox', 'Management', 'Building', 'Simulation', 'Singleplayer', 'Open World', 'Sci-fi', 'Crafting', 'Moddable', '2D', 'Indie', 'Great Soundtrack', 'Atmospheric', 'Space', 'Action', 'Pixel Graphics']"
+    },
+    {
+        "Name": "Raft",
+        "Current Players": "19403",
+        "Peak Players": "24338",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/648800/Raft/",
+        "appid": "648800",
+        "Tags": "['Survival', 'Open World Survival Craft', 'Multiplayer', 'Co-op', 'Crafting', 'Open World', 'Building', 'Base Building', 'Adventure', 'Online Co-Op', 'Sandbox', 'Early Access', 'First-Person', 'Singleplayer', 'Simulation', 'Underwater', 'Action', 'Indie', 'Strategy', 'Massively Multiplayer']"
+    },
+    {
+        "Name": "Cities: Skylines",
+        "Current Players": "19309",
+        "Peak Players": "26542",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/255710/Cities_Skylines/",
+        "appid": "255710",
+        "Tags": "['City Builder', 'Simulation', 'Building', 'Strategy', 'Management', 'Sandbox', 'Singleplayer', 'Moddable', 'Economy', 'Resource Management', 'Realistic', 'Mod', 'Replay Value', 'Casual', 'Family Friendly', 'Real-Time with Pause', 'Modern', 'Great Soundtrack', 'Funny', 'Action']"
+    },
+    {
+        "Name": "Eternal Return: Black Survival",
+        "Current Players": "18918",
+        "Peak Players": "42141",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1049590/Eternal_Return_Black_Survival/",
+        "appid": "1049590",
+        "Tags": "['Free to Play', 'Anime', 'Battle Royale', 'MOBA', 'Multiplayer', 'Strategy', 'Survival', 'PvP', 'Top-Down', 'Crafting', 'Combat', 'Tactical', 'Indie', 'Action', '3D', 'Character Customization', 'Nudity', 'Experimental', 'Early Access', 'Point & Click']"
+    },
+    {
+        "Name": "Fallout 4",
+        "Current Players": "18187",
+        "Peak Players": "19787",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/377160/Fallout_4/",
+        "appid": "377160",
+        "Tags": "['Open World', 'Post-apocalyptic', 'Exploration', 'Singleplayer', 'RPG', 'Atmospheric', 'Adventure', 'Shooter', 'First-Person', 'Story Rich', 'Action', 'Sci-fi', 'FPS', 'Action RPG', 'Sandbox', 'Great Soundtrack', 'Third Person', 'Survival', 'Third-Person Shooter', 'Casual']"
+    },
+    {
+        "Name": "FINAL FANTASY XIV Online",
+        "Current Players": "17031",
+        "Peak Players": "22968",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/39210/FINAL_FANTASY_XIV_Online/",
+        "appid": "39210",
+        "Tags": "['MMORPG', 'RPG', 'Massively Multiplayer', 'Fantasy', 'JRPG', 'Great Soundtrack', 'Open World', 'Character Customization', 'Story Rich', 'Anime', 'Multiplayer', 'Adventure', 'Magic', 'Action', 'Atmospheric', 'Co-op', 'Action RPG', 'Singleplayer', 'Online Co-Op', 'Female Protagonist']"
+    },
+    {
+        "Name": "Crusader Kings III",
+        "Current Players": "16995",
+        "Peak Players": "18957",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1158310/Crusader_Kings_III/",
+        "appid": "1158310",
+        "Tags": "['Strategy', 'RPG', 'Simulation', 'Medieval', 'Grand Strategy', 'Historical', 'Sexual Content', 'Multiplayer', 'Singleplayer', 'Political', 'Nudity', 'War', 'Sandbox', 'Dating Sim', 'Choices Matter', 'Character Customization', 'Real-Time with Pause', 'Moddable', 'Management', 'Great Soundtrack']"
+    },
+    {
+        "Name": "Fall Guys: Ultimate Knockout",
+        "Current Players": "16454",
+        "Peak Players": "18534",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/",
+        "appid": "1097150",
+        "Tags": "['Multiplayer', 'Funny', 'Battle Royale', 'Online Co-Op', 'Family Friendly', 'Comedy', 'Party Game', 'Cute', 'Casual', 'Physics', 'Massively Multiplayer', 'Colorful', '3D Platformer', 'Indie', 'Co-op', 'Action', 'Controller', 'Great Soundtrack', 'Difficult', 'Local Co-Op']"
+    },
+    {
+        "Name": "DARK SOULS\u2122 III",
+        "Current Players": "16165",
+        "Peak Players": "19873",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/374320/DARK_SOULS_III/",
+        "appid": "374320",
+        "Tags": "['Souls-like', 'Dark Fantasy', 'Difficult', 'RPG', 'Atmospheric', 'Lore-Rich', 'Third Person', 'Exploration', 'Story Rich', 'Co-op', 'Action RPG', 'PvP', 'Great Soundtrack', 'Action', 'Adventure', 'Multiplayer', 'Open World', 'Singleplayer', 'Replay Value', 'Character Customization']"
+    },
+    {
+        "Name": "eFootball PES 2021 SEASON UPDATE",
+        "Current Players": "15417",
+        "Peak Players": "15753",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1259970/eFootball_PES_2021_SEASON_UPDATE/",
+        "appid": "1259970",
+        "Tags": "['Sports', 'eSports', 'Realistic', 'Co-op', 'Multiplayer', 'Singleplayer', 'Soccer', 'Local Co-Op', 'Local Multiplayer', 'Online Co-Op', 'Football', 'Free to Play', 'Simulation']"
+    },
+    {
+        "Name": "Stellaris",
+        "Current Players": "15381",
+        "Peak Players": "17709",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/281990/Stellaris/",
+        "appid": "281990",
+        "Tags": "['Space', 'Grand Strategy', 'Sci-fi', 'Exploration', '4X', 'Strategy', 'Sandbox', 'Simulation', 'Moddable', 'Real-Time with Pause', 'Diplomacy', 'Singleplayer', 'Multiplayer', 'Management', 'Futuristic', 'Procedural Generation', 'Great Soundtrack', 'Military', 'Atmospheric', 'Replay Value']"
+    },
+    {
+        "Name": "Paladins",
+        "Current Players": "15316",
+        "Peak Players": "15316",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/444090/Paladins/",
+        "appid": "444090",
+        "Tags": "['Hero Shooter', 'Free to Play', 'Multiplayer', 'FPS', 'Shooter', 'Action', 'Team-Based', 'First-Person', 'PvP', 'MOBA', 'Online Co-Op', 'Fantasy', 'Strategy', 'Co-op', 'Early Access', 'Massively Multiplayer', 'Funny', 'Adventure', 'Survival', 'Anime']"
+    },
+    {
+        "Name": "Mount & Blade II: Bannerlord",
+        "Current Players": "14785",
+        "Peak Players": "16272",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/261550/Mount__Blade_II_Bannerlord/",
+        "appid": "261550",
+        "Tags": "['Medieval', 'Strategy', 'Open World', 'RPG', 'War', 'Multiplayer', 'Sandbox', 'Action', 'Singleplayer', 'Simulation', 'Moddable', 'Adventure', 'Character Customization', 'Horses', 'Realistic', 'Third Person', 'First-Person', 'Historical', 'Great Soundtrack', 'Early Access']"
+    },
+    {
+        "Name": "Satisfactory",
+        "Current Players": "13821",
+        "Peak Players": "15676",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/526870/Satisfactory/",
+        "appid": "526870",
+        "Tags": "['Base Building', 'Automation', 'Crafting', 'Open World', 'Co-op', 'Multiplayer', 'Resource Management', 'Building', 'Exploration', 'Sandbox', 'Adventure', 'Strategy', 'Simulation', 'Early Access', 'Indie', 'Open World Survival Craft', 'Survival', 'First-Person', 'Sci-fi', 'Singleplayer']"
+    },
+    {
+        "Name": "SMITE",
+        "Current Players": "13559",
+        "Peak Players": "19131",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/386360/SMITE/",
+        "appid": "386360",
+        "Tags": "['Free to Play', 'MOBA', 'Multiplayer', 'Action', 'Third Person', 'Mythology', 'Team-Based', 'Competitive', 'Strategy', 'PvP', 'Co-op', 'Massively Multiplayer', 'eSports', 'RPG', 'MMORPG', 'Adventure', 'Funny', 'Nudity', 'Casual', 'Survival']"
+    },
+    {
+        "Name": "Factorio",
+        "Current Players": "13412",
+        "Peak Players": "14735",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/427520/Factorio/",
+        "appid": "427520",
+        "Tags": "['Automation', 'Base Building', 'Resource Management', 'Sandbox', 'Crafting', 'Strategy', 'Multiplayer', 'Survival', 'Management', 'Open World', 'Casual', 'Co-op', '2D', 'Building', 'Moddable', 'Pixel Graphics', 'Singleplayer', 'Simulation', 'City Builder', 'Trains']"
+    },
+    {
+        "Name": "Divinity: Original Sin 2",
+        "Current Players": "12765",
+        "Peak Players": "16240",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/435150/Divinity_Original_Sin_2__Definitive_Edition/",
+        "appid": "435150",
+        "Tags": "['RPG', 'Choices Matter', 'Turn-Based Combat', 'Open World', 'Story Rich', 'Co-op Campaign', 'Party-Based RPG', 'Multiplayer', 'Character Customization', 'Fantasy', 'Crafting', 'CRPG', 'Isometric', 'Moddable', 'PvP', 'Turn-Based', 'Strategy', 'Turn-Based Tactics', 'Female Protagonist', 'Co-op']"
+    },
+    {
+        "Name": "Red Dead Online",
+        "Current Players": "12644",
+        "Peak Players": "13723",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1404210/Red_Dead_Online/",
+        "appid": "1404210",
+        "Tags": "['Action', 'Adventure', 'Multiplayer', 'Open World', 'Western', 'Shooter', 'Third-Person Shooter', 'Horses', 'Realistic', 'Online Co-Op', 'PvP', 'MMORPG', 'FPS', 'Singleplayer', 'Sexual Content', 'Story Rich', 'Psychological Horror']"
+    },
+    {
+        "Name": "VRChat",
+        "Current Players": "12239",
+        "Peak Players": "16297",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/438100/VRChat/",
+        "appid": "438100",
+        "Tags": "['VR', 'Free to Play', 'Memes', 'Anime', 'Funny', 'Multiplayer', 'Massively Multiplayer', 'Early Access', 'First-Person', 'Simulation', 'Open World', 'Psychological Horror', 'Casual', 'Adventure', 'Horror', 'Sports', 'MMORPG', 'FPS', 'Comedy', 'Action']"
+    },
+    {
+        "Name": "tModLoader",
+        "Current Players": "12126",
+        "Peak Players": "12432",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1281930/tModLoader/",
+        "appid": "1281930",
+        "Tags": "['Adventure', 'Action', 'Indie', 'RPG', 'Free to Play', 'Mod', 'Sandbox', 'Moddable', 'Building', 'Multiplayer', '2D', 'Pixel Graphics', 'Great Soundtrack', 'Singleplayer', 'Survival', 'Replay Value', 'Co-op', 'Open World Survival Craft']"
+    },
+    {
+        "Name": "Soundpad",
+        "Current Players": "11380",
+        "Peak Players": "11966",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/629520/Soundpad/",
+        "appid": "629520",
+        "Tags": "['Utilities', 'Audio Production', 'Memes', 'Music', 'Software', 'Funny', 'Survival Horror', 'Psychological Horror', 'Horror']"
+    },
+    {
+        "Name": "Elite Dangerous",
+        "Current Players": "11098",
+        "Peak Players": "12447",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/359320/Elite_Dangerous/",
+        "appid": "359320",
+        "Tags": "['Space Sim', 'Space', 'Open World', 'Exploration', 'Sci-fi', 'Simulation', 'Massively Multiplayer', 'Multiplayer', 'First-Person', 'Action', 'Adventure', 'Sandbox', 'VR', 'Online Co-Op', 'Trading', 'Singleplayer', 'RPG', 'Strategy', 'Difficult', 'TrackIR']"
+    },
+    {
+        "Name": "Oxygen Not Included",
+        "Current Players": "10452",
+        "Peak Players": "13123",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/457140/Oxygen_Not_Included/",
+        "appid": "457140",
+        "Tags": "['Colony Sim', 'Base Building', 'Survival', 'Resource Management', 'Building', 'Singleplayer', 'Simulation', 'Management', '2D', 'Sandbox', 'Strategy', 'Space', 'Indie', 'Sci-fi', 'Exploration', 'Open World', 'Early Access', 'Difficult', 'Adventure', 'Space Sim']"
+    },
+    {
+        "Name": "Fallout 76",
+        "Current Players": "9941",
+        "Peak Players": "10497",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1151340/Fallout_76/",
+        "appid": "1151340",
+        "Tags": "['Dark Comedy', 'RPG', 'Open World', 'Post-apocalyptic', 'Capitalism', 'Multiplayer', 'Survival', 'Base Building', 'Horror', 'Shooter', 'Co-op', 'Gore', 'Early Access', 'Violent', 'MMORPG', 'Exploration', 'FPS', 'Atmospheric', 'Great Soundtrack', 'Singleplayer']"
+    },
+    {
+        "Name": "Path of Exile",
+        "Current Players": "9920",
+        "Peak Players": "10521",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/238960/Path_of_Exile/",
+        "appid": "238960",
+        "Tags": "['Free to Play', 'Action RPG', 'Hack and Slash', 'RPG', 'Multiplayer', 'Massively Multiplayer', 'Loot', 'MMORPG', 'Action', 'Fantasy', 'Adventure', 'Dungeon Crawler', 'Online Co-Op', 'Co-op', 'Indie', 'Dark Fantasy', 'Character Customization', 'PvE', 'Inventory Management', 'Fishing']"
+    },
+    {
+        "Name": "Borderlands 3",
+        "Current Players": "9869",
+        "Peak Players": "13289",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/397540/Borderlands_3/",
+        "appid": "397540",
+        "Tags": "['RPG', 'Action', 'Looter Shooter', 'Online Co-Op', 'FPS', 'Multiplayer', 'Shooter', 'Open World', 'Co-op', 'Loot', 'Co-op Campaign', 'Singleplayer', 'Gore', 'Violent', 'First-Person', 'Adventure', 'Nudity', 'Great Soundtrack', 'Epic', 'Comedy']"
+    },
+    {
+        "Name": "Hunt: Showdown",
+        "Current Players": "9767",
+        "Peak Players": "13544",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/594650/Hunt_Showdown/",
+        "appid": "594650",
+        "Tags": "['Multiplayer', 'Hunting', 'Shooter', 'Horror', 'Survival', 'FPS', 'Online Co-Op', 'PvP', 'Western', 'Survival Horror', 'Action', 'Zombies', 'Open World', 'Perma Death', 'Team-Based', 'Gore', 'Violent', 'First-Person', 'Early Access', 'Battle Royale']"
+    },
+    {
+        "Name": "F1 2020",
+        "Current Players": "9684",
+        "Peak Players": "10707",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1080110/F1_2020/",
+        "appid": "1080110",
+        "Tags": "['Racing', 'Sports', 'Simulation', 'Multiplayer', 'Automobile Sim', 'Difficult', 'Split Screen', 'Realistic', 'Strategy', 'Management', 'Driving', 'Singleplayer', 'VR', 'Local Multiplayer']"
+    },
+    {
+        "Name": "Assassin's Creed Odyssey",
+        "Current Players": "9579",
+        "Peak Players": "12358",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/812140/Assassins_Creed_Odyssey/",
+        "appid": "812140",
+        "Tags": "['Open World', 'RPG', 'Assassin', 'Singleplayer', 'Action', 'Adventure', 'Historical', 'Stealth', 'Story Rich', 'Female Protagonist', 'Parkour', 'Third Person', 'Sexual Content', 'Choices Matter', 'Violent', 'Multiplayer', 'Atmospheric', 'Great Soundtrack', 'Nudity', 'Gore']"
+    },
+    {
+        "Name": "Conan Exiles",
+        "Current Players": "9556",
+        "Peak Players": "13376",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/440900/Conan_Exiles/",
+        "appid": "440900",
+        "Tags": "['Survival', 'Open World', 'Building', 'Nudity', 'Crafting', 'Open World Survival Craft', 'Multiplayer', 'RPG', 'Sandbox', 'Massively Multiplayer', 'Action', 'Adventure', 'Online Co-Op', 'Violent', 'Exploration', 'Singleplayer', 'Co-op', 'PvP', 'Fantasy', 'Gore']"
+    },
+    {
+        "Name": "Space Engineers",
+        "Current Players": "9491",
+        "Peak Players": "10699",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/244850/Space_Engineers/",
+        "appid": "244850",
+        "Tags": "['Space', 'Sandbox', 'Building', 'Multiplayer', 'Open World Survival Craft', 'Simulation', 'Survival', 'Open World', 'Physics', 'Crafting', 'Destruction', 'Co-op', 'Indie', 'Futuristic', 'Sci-fi', 'Singleplayer', 'Action', 'Strategy', 'Adventure', 'Early Access']"
+    },
+    {
+        "Name": "theHunter: Call of the Wild\u2122",
+        "Current Players": "9262",
+        "Peak Players": "10321",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/518790/theHunter_Call_of_the_Wild/",
+        "appid": "518790",
+        "Tags": "['Hunting', 'Open World', 'Multiplayer', 'First-Person', 'Simulation', 'Shooter', 'Adventure', 'Realistic', 'Co-op', 'Survival', 'FPS', 'Action', 'Singleplayer', 'Walking Simulator', 'Atmospheric', 'Sports', 'Online Co-Op', 'Combat', 'Strategy', 'Gore']"
+    },
+    {
+        "Name": "NBA 2K21",
+        "Current Players": "9010",
+        "Peak Players": "17168",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1225330/NBA_2K21/",
+        "appid": "1225330",
+        "Tags": "['Basketball', 'Sports', 'Simulation', 'Character Customization', 'Realistic', 'Action', 'Multiplayer', '3D', 'Team-Based', 'Third Person', 'Singleplayer', 'Online Co-Op', 'Local Co-Op', 'Co-op', 'Local Multiplayer', 'Competitive', '4 Player Local', 'Dark Fantasy', 'Hacking', 'Shooter']"
+    },
+    {
+        "Name": "The Binding of Isaac: Rebirth",
+        "Current Players": "8905",
+        "Peak Players": "9229",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/250900/The_Binding_of_Isaac_Rebirth/",
+        "appid": "250900",
+        "Tags": "['Action Roguelike', 'Roguelike', 'Indie', 'Replay Value', 'Difficult', 'Pixel Graphics', 'Dungeon Crawler', 'Great Soundtrack', 'Singleplayer', 'Dark', 'Remake', '2D', 'Local Co-Op', 'Gore', 'Procedural Generation', 'Roguelite', 'Atmospheric', 'Action', 'Horror', 'Co-op']"
+    },
+    {
+        "Name": "No Man's Sky",
+        "Current Players": "8835",
+        "Peak Players": "10226",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/275850/No_Mans_Sky/",
+        "appid": "275850",
+        "Tags": "['Open World', 'Open World Survival Craft', 'Space', 'Exploration', 'Sci-fi', 'Survival', 'Procedural Generation', 'First-Person', 'Adventure', 'Singleplayer', 'Sandbox', 'Atmospheric', 'Crafting', 'Space Sim', 'Multiplayer', 'Indie', 'Action', 'Simulation', 'FPS', 'Great Soundtrack']"
+    },
+    {
+        "Name": "Albion Online",
+        "Current Players": "8835",
+        "Peak Players": "9617",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/761890/Albion_Online/",
+        "appid": "761890",
+        "Tags": "['Free to Play', 'MMORPG', 'Massively Multiplayer', 'Open World', 'RPG', 'Sandbox', 'Crafting', 'Multiplayer', 'PvP', 'Survival', 'PvE', 'Medieval', 'Economy', 'Loot', 'Fantasy', 'Strategy', 'Co-op', 'Difficult', 'Singleplayer', 'Action']"
+    },
+    {
+        "Name": "Dying Light",
+        "Current Players": "8749",
+        "Peak Players": "11003",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/239140/Dying_Light/",
+        "appid": "239140",
+        "Tags": "['Zombies', 'Survival Horror', 'Horror', 'Online Co-Op', 'Open World', 'Parkour', 'First-Person', 'Open World Survival Craft', 'PvP', 'Action', 'FPS', 'PvE', 'Gore', 'Survival', 'Stealth', 'Post-apocalyptic', 'Story Rich', 'Hack and Slash', 'Action RPG', 'RPG']"
+    },
+    {
+        "Name": "Geometry Dash",
+        "Current Players": "8648",
+        "Peak Players": "9081",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/322170/Geometry_Dash/",
+        "appid": "322170",
+        "Tags": "['Difficult', 'Precision Platformer', 'Great Soundtrack', 'Music', 'Rhythm', 'Level Editor', '2D', 'Colorful', 'Singleplayer', 'Platformer', 'Character Customization', 'Arcade', 'Indie', 'Side Scroller', 'Action', 'Funny', 'Family Friendly', 'Casual', 'Strategy', 'Adventure']"
+    },
+    {
+        "Name": "Total War: ROME II - Emperor Edition",
+        "Current Players": "8541",
+        "Peak Players": "9386",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/214950/Total_War_ROME_II__Emperor_Edition/",
+        "appid": "214950",
+        "Tags": "['Strategy', 'Turn-Based Strategy', 'Historical', 'Grand Strategy', 'Rome', 'Tactical', 'Multiplayer', 'War', 'Real Time Tactics', 'Turn-Based', 'RTS', 'Singleplayer', 'Online Co-Op', 'Turn-Based Tactics', 'Simulation', 'Co-op', 'Moddable', 'Action', 'Atmospheric', 'Education']"
+    },
+    {
+        "Name": "Yu-Gi-Oh! Duel Links",
+        "Current Players": "8497",
+        "Peak Players": "9189",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/601510/YuGiOh_Duel_Links/",
+        "appid": "601510",
+        "Tags": "['Free to Play', 'Card Game', 'Strategy', 'Anime', 'Multiplayer', 'Trading Card Game', 'Singleplayer', 'Turn-Based', 'Competitive', 'Casual', 'RPG', 'Online Co-Op', 'Great Soundtrack', 'Action', 'Memes', 'Adventure', 'Simulation', 'Massively Multiplayer', 'Survival', 'MMORPG']"
+    },
+    {
+        "Name": "STAR WARS\u2122: The Old Republic\u2122",
+        "Current Players": "8483",
+        "Peak Players": "10081",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/1286830/STAR_WARS_The_Old_Republic/",
+        "appid": "1286830",
+        "Tags": "['Free to Play', 'MMORPG', 'Multiplayer', 'RPG', 'Massively Multiplayer', 'Open World', 'Character Customization', 'Story Rich', 'Choices Matter', 'Sci-fi', 'Adventure', 'Action', 'PvP', 'Third Person', 'Space', 'Atmospheric', 'Action RPG', 'Party-Based RPG', 'CRPG', 'Great Soundtrack']"
+    },
+    {
+        "Name": "Halo: The Master Chief Collection",
+        "Current Players": "8344",
+        "Peak Players": "13494",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/",
+        "appid": "976730",
+        "Tags": "['Great Soundtrack', 'FPS', 'Classic', 'Multiplayer', 'Story Rich', 'Sci-fi', 'Co-op', 'First-Person', 'Epic', 'Action', 'Shooter', 'Lore-Rich', 'Aliens', 'Singleplayer', 'Beautiful', 'Space', 'Atmospheric', 'Adventure', 'Horror', 'Online Co-Op']"
+    },
+    {
+        "Name": "Slay the Spire",
+        "Current Players": "8224",
+        "Peak Players": "9905",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+        "appid": "646570",
+        "Tags": "['Roguelike Deckbuilder', 'Card Battler', 'Card Game', 'Roguelike', 'Deckbuilding', 'Turn-Based', 'Strategy', 'Singleplayer', 'Roguelite', 'Replay Value', 'Indie', 'Difficult', 'Dungeon Crawler', 'RPG', 'Mouse only', 'Great Soundtrack', '2D', 'Procedural Generation', 'Fantasy', 'Casual']"
+    },
+    {
+        "Name": "The Elder Scrolls V: Skyrim",
+        "Current Players": "8216",
+        "Peak Players": "8596",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/72850/The_Elder_Scrolls_V_Skyrim/",
+        "appid": "72850",
+        "Tags": "['Open World', 'RPG', 'Fantasy', 'Adventure', 'Moddable', 'Dragons', 'First-Person', 'Action', 'Medieval', 'Singleplayer', 'Magic', 'Story Rich', 'Great Soundtrack', 'Sandbox', 'Lore-Rich', 'Atmospheric', 'Character Customization', 'Action RPG', 'Third Person', 'Epic']"
+    },
+    {
+        "Name": "Planet Zoo",
+        "Current Players": "8182",
+        "Peak Players": "9201",
+        "Time": "2021-01-06 13:37:39",
+        "Link": "https://store.steampowered.com/app/703080/Planet_Zoo/",
+        "appid": "703080",
+        "Tags": "['Management', 'Simulation', 'Building', 'Nature', 'City Builder', 'Sandbox', 'Economy', 'Family Friendly', 'Realistic', 'Great Soundtrack', 'Singleplayer', 'Resource Management', 'Cute', 'Strategy', 'Relaxing', 'Funny', 'Casual', 'Open World', 'Horses', 'Atmospheric']"
+    }
+]
