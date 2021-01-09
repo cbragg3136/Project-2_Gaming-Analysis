@@ -4,14 +4,14 @@
         <title>MS Games</title>
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
-        <link href="css/styles2.css" rel="Stylesheet" type="text/css" />
+        <link href="static/css/styles2.css" rel="Stylesheet" type="text/css" />
         <script src="https://d3js.org/d3.v6.min.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <header>
       <div class="flex">
           <div class="logo">
-              <a href="#"><img src="images/war_zone.jpg" alt="War Zone" /></a>
+              <a href="#"><img src="static/images/war_zone.jpg" alt="War Zone" /></a>
           </div>
           <nav>
               <button id="nav-toggle" class="hamburger-menu">
@@ -38,11 +38,11 @@
           border: none;
           cursor: pointer;
         }
-        
+
         .dropbtn:hover, .dropbtn:focus {
           background-color: #3e8e41;
         }
-        
+
         #myInput {
           box-sizing: border-box;
           background-image: url('searchicon.png');
@@ -53,14 +53,14 @@
           border: none;
           border-bottom: 1px solid #ddd;
         }
-        
+
         #myInput:focus {outline: 3px solid #ddd;}
-        
+
         .dropdown {
           position: relative;
           display: inline-block;
         }
-        
+
         .dropdown-content {
           display: none;
           position: absolute;
@@ -70,16 +70,16 @@
           border: 1px solid #ddd;
           z-index: 1;
         }
-        
+
         .dropdown-content a {
           color: black;
           padding: 12px 16px;
           text-decoration: none;
           display: block;
         }
-        
+
         .dropdown a:hover {background-color: #ddd;}
-        
+
         .show {display: block;}
         </style>
         </head>
@@ -90,8 +90,8 @@
             <input type="text" placeholder="Search.." id="myInput">
             <!-- <a href="#ID">ID</a> -->
             <button id = "ranksearch" type="button" class="btn btn-default"><a href="#Rank">Rank</a></button>
-            <button id = "countrysearch" type="button" class="btn btn-default"><a href="#Country">Country</a></button> 
-            <button id = "gamesearch" type="button" class="btn btn-default"><a href="#Game">Game</a></button> 
+            <button id = "countrysearch" type="button" class="btn btn-default"><a href="#Country">Country</a></button>
+            <button id = "gamesearch" type="button" class="btn btn-default"><a href="#Game">Game</a></button>
             <!-- <a href="#Rank">Rank</a> -->
           </div>
         </div>
@@ -117,7 +117,7 @@
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
-        
+
         function filterFunction() {
           var input, filter, ul, li, a, i;
           input = document.getElementById("myInput");
@@ -138,7 +138,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
          <script src="games.json"></script>
          <script src="static/js/plots.js"></script>
-        
+
         </body>
     <body>
         <div id="plot"></div>
