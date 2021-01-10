@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, render_template
-from flask_pymongo import PyMongo
+from flask_pymongo import PyMongo, DESCENDING, ASCENDING
 from os import environ
 import datetime
 import re
@@ -34,6 +34,10 @@ def AboutUs():
 @app.route('/top100plot.html')
 def top100plot():
     return render_template('top100plot.html')
+
+@app.route('/steam.html')
+def steamhtml():
+    return render_template('steam.html')
 
 # STEAM
 
@@ -124,6 +128,25 @@ def get_top100_list():
         item = {
             'Name': d["_id"]["Name"],
             'appid': d["_id"]["appid"]
+        }
+        data.append(item)
+    return jsonify(data)
+
+# route to most recent top100
+# returns name and appid sorted by number of players
+@app.route('/api/current_100/')
+def get_current_100():
+    data = []
+    documents = steamdb.players.find().sort([("Time",DESCENDING),("Current Players",DESCENDING)]).limit(100)
+
+    for d in documents:
+        item = {
+            '_id': str(d['_id']),
+            'Name': d['Name'],
+            'Current Players': d['Current Players'],
+            'Peak Players': d['Peak Players'],
+            'Time': d['Time'],
+            'Link': d['Link']
         }
         data.append(item)
     return jsonify(data)
