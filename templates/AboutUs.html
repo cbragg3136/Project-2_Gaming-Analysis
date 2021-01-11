@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About Us</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <link href="../static/css/styles4.css" rel="Stylesheet" type="text/css" /> 
+
+        <!------ Include the above in your HEAD tag ---------->
+    </head>
+
+    <body>
+      <header>
+          <div class="flex">
+              <div class="logo">
+                  <a href="#"><img src="../static/images/war_zone.jpg" alt="War Zone" /></a>
+              </div>
+              <nav>
+                  <button id="nav-toggle" class="hamburger-menu">
+                      <span class="strip"></span>
+                      <span class="strip"></span>
+                      <span class="strip"></span>
+                  </button>
+                    <ul id="nav-menu-container">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="MSGames.html">MS Games</a></li>
+                        <li><a href="PCGames.html">PC Games</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+    <main>   
+        <h2 style="text-align:center">Our Team</h2>
+          <div class="row">
+            <div class="card">
+              <div class="col-sm-2">
+                  <img src="../static/images/purple_sus.png" alt="Christi" class="img-thumbnail"  style="width: 70%">
+                  <div class="container">
+                    <h4>Christi Bragg</h4>
+                    <li><a href="https://www.linkedin.com/in/christi-bragg-67b71554/">LinkedIn</a></li>
+                    <li><a href="https://github.com/cbragg3136">Github</a></li>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="col-sm-2">
+                  <img src="../static/images/green_sus.png" alt="Dustin" class="img-thumbnail" style="width: 70%">
+                  <div class="container">
+                    <h4>Dustin Combs</h4>
+                    <li><a href="https://www.linkedin.com/in/dustin-combs-998750/">LinkedIn</a></li>
+                    <li><a href="https://github.com/dustincombs">Github</a></li>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="col-sm-2">
+                  <img src="../static/images/yellow_sus.png" alt="Lydia" class="img-thumbnail" style="width: 70%">
+                  <div class="container">
+                    <h4>Lydia Field</h4>
+                    <li><a href="https://www.linkedin.com/in/lydia-field-908117127/">LinkedIn</a></li>
+                    <li><a href="https://github.com/lydiapf">Github</a></li>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="col-sm-2">
+                  <img src="../static/images/orange_sus.png" alt="Shelly" class="img-thumbnail" style="width: 70%">
+                  <div class="container">
+                    <h4>Shelly Nixon</h4>
+                    <li><a href="https://www.linkedin.com/in/shelly-nixon-8014312a/">LinkedIn</a></li>
+                    <li><a href="https://github.com/shellymnixon">Github</a></li>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="col-sm-2">
+                  <img src="../static/images/cyan_sus.png" alt="Rodrigo" class="img-thumbnail" style="width: 70%">
+                  <div class="container">
+                    <h4>Rodrigo Reyes</h4>
+                    <li><a href="https://www.linkedin.com/in/rodrigo-reyes-219b26180/">LinkedIn</a></li>
+                    <li><a href="https://github.com/rodking96">Github</a></li>
+                  </div>
+              </div>
+            </div>
+            
+            <div class="card">
+              <div class="col-sm-2">
+                  <img src="../static/images/red_sus.png" alt="Lowell" class="img-thumbnail" style="width: 70%">
+                  <div class="container">
+                    <h4>Lowell Vaughen</h4>
+                    <li><a href="https://www.linkedin.com/in/lowell-vaughen-3990741/">LinkedIn</a></li>
+                    <li><a href="https://github.com/lvaughen">Github</a></li>
+                  </div>
+              </div>
+            </div>
+          </div>
+       </main>
+
+        <script>
+            document.getElementById('nav-toggle').addEventListener('click', function () {
+                let navMenu = document.getElementById('nav-menu-container');
+                navMenu.style.display = navMenu.offsetParent === null ? 'block' : 'none';
+            });
+        </script>
+    </body>
+</html>

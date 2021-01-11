@@ -1,0 +1,145 @@
+body {
+    font-family: 'helvetica', 'sans-serif';
+    margin: 0;
+}
+
+/* start: global style rules */
+h1, h2, h3, h4, h5 {
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 0.0em 0;
+}
+
+h2 {
+    font-size: 2em;
+    font: bold;
+}
+
+h4 {
+    font-size: 1.2em;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    justify-content: space-between;
+}
+
+
+/* start: header styles */
+header {
+    background-color: #131313;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid #FFB320;
+}
+
+.hamburger-menu {
+    background-color: transparent;
+    border: 1px solid #FFB320;
+    padding: 3px 5px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-menu .strip {
+    display: block;
+    height: 1px;
+    background-color: #FFB320;
+    margin: 4px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1em;
+    margin: 0 18px;
+}
+
+nav ul li a {
+    color: #eee;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #FFB320;
+}
+
+
+.card {
+    padding: 20px 0px 20px 20px;
+    box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px 8px 8px 8px;
+    float: left;
+    width: 13.3%;
+
+
+}
+
+.container {
+    font-size: 1.5vw;
+}
+  
+
+
+@media screen and (max-width: 767px) {
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .flex {
+        max-width: 540px;
+    }
+
+    nav ul {
+        display: none;
+        position: absolute;
+        top: 101%;
+        width: 100%;
+        background-color: #131313;
+        left: 0;
+        padding: 0;
+        margin: 0;
+        z-index: 1;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 15px 0 15px 20px;
+        border-bottom: 1px solid #FFB320;
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    .hamburger-menu {
+        display: block;
+        margin-top: 2px;
+    }
+
+    #logo-image {
+        height: 650px;
+        background-size: cover;
+    }
+
+    .card {
+        display: block;
+      }
+
+} 
