@@ -1,12 +1,3 @@
-fetch ("./steam.json")
-  .then(function(resp){
-    return resp.json();
-  })
-  .then(function(data){
-    console.log(data)
-  });
-
-
 function unpack(rows, index) {
   return rows.map(function (row) {
     return row[index];
@@ -14,9 +5,10 @@ function unpack(rows, index) {
 }
 
 function getsteamData() {
-  d3.json("./steam.json").then(function (data){
+  d3.json("/api/current_100/").then(function (data){
     var name = d3.select("#myInput").property("value")
-    data = data.filter(row=>row.Name===name);
+    // data = data.filter(row=>row.Name===name);
+    var name = unpack(data, "Name");
     var current  = unpack(data, "Current Players");
     var peak  = unpack(data, "Date");
     var time = unpack(data, "Time");
@@ -55,7 +47,7 @@ function buildDropdown(
     trow.append("td").text(Appid[i]);
     trow.append("td").text(Tags[i]);
 
-    
+
     // Function called by DOM changes
     function dropdownchange() {
       var dropdownMenu = d3.select("#myDropdown");
@@ -64,7 +56,7 @@ function buildDropdown(
       // Initialize an empty array for the country's data
       var data = getData();
       console.log(data)
-    
+
       if (dataset == 'us') {
           data = us;
       }
@@ -77,7 +69,7 @@ function buildDropdown(
       // Call function to update the chart
       updatePlotly(data);
     }
-    
+
     // Update the restyled plot's values
     function updatePlotly(newdata) {
       Plotly.restyle("pie", "values", [newdata]);
@@ -91,16 +83,14 @@ var tbody = d3.select("tbody");
 function buildTable(data){
     //clear out existing data
     tbody.html("");
-    data.forEach(dataRow => {
-        console.table(dataRow);
-        let row = tbody.append("tr");
-
-       console.table(Object.values(dataRow));
-       Object.values(dataRow).forEach((val) => {
+    data.forEach((dataRow, i) => {
+       let row = tbody.append("tr");
+       let cell = row.append("td")
+       cell.text(i+1);
+       colList = ["Name", "Appid", "Current Players", "Peak Players", "Time"]
+       colList.forEach((val) => {
            let cell = row.append("td");
-           cell.text(val);
+           cell.text(dataRow[val]);
        });
     });
 }
-
-

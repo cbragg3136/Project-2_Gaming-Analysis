@@ -92,10 +92,10 @@
         </head>
         <body style = "background:rgb(88, 84, 84)">
           <div class="row"><div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Steam Top 100</button>
+            <button id = "steamsearch" class="btn btn-default">Steam Top 100</button>
             <div id="myDropdown" class="dropdown-content">
               <input type="text" placeholder="Search.." id="myInput">
-              <button id = "steamsearch" type="button" class="btn btn-default"><a href="#name">Name</a></button>
+              <!-- <button id = "steamsearch" type="button" class="btn btn-default"><a href="#name">Name</a></button> -->
               <!-- <button id = "genressearch" type="button" class="btn btn-default"><a href="#genres">Genres</a></button>
               <button id = "pricesearch" type="button" class="btn btn-default"><a href="#price">Price</a></button>  -->
             </div>
@@ -105,13 +105,13 @@
             <table id="steam-table" class="table table-striped table-dark">
               <thead>
                 <tr>
+                  <th class="table-head">Rank</th>
                   <th class="table-head">Name</th>
+                  <th class="table-head">Appid</th>
                   <th class="table-head">Current Players</th>
                   <th class="table-head">Peak Players</th>
                   <th class="table-head">Time</th>
-                  <th class="table-head">Link</th>
-                  <th class="table-head">Appid</th>
-                  <th class="table-head">Tags</th>
+                  <!-- <th class="table-head">Link</th> -->
 
                 </tr>
               </thead>
@@ -145,7 +145,7 @@
         </script>
     <body>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.9.7/d3.min.js"></script>
-       <script src="pcgames.json"></script>
+       <!-- <script src="pcgames.json"></script> -->
        <script src="static/js/plots3.js"></script>
 
         <div id="plot"></div>

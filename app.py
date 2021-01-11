@@ -141,8 +141,8 @@ def get_current_100():
 
     for d in documents:
         item = {
-            '_id': str(d['_id']),
             'Name': d['Name'],
+            'Appid': d['appid'],
             'Current Players': d['Current Players'],
             'Peak Players': d['Peak Players'],
             'Time': d['Time'],
