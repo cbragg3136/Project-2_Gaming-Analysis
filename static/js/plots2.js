@@ -1,10 +1,10 @@
-fetch ("/api/appid-mongo")
-  .then(function(resp){
-    return resp.json();
-  })
-  .then(function(data){
-    console.log(data)
-  });
+// fetch ("/api/steam_metadata")
+//   .then(function(resp){
+//     return resp.json();
+//   })
+//   .then(function(data){
+//     console.log(data)
+//   });
 
 
 function unpack(rows, index) {
@@ -14,38 +14,26 @@ function unpack(rows, index) {
 }
 
 function getcategoriesData() {
-  d3.json("/api/appid-mongo").then(function (data){
-    var categories = d3.select("#myInput").property("value")
-    data = data.filter(row=>row.categories===categories);
-    var appid = unpack(data, "appid");
-    var type = unpack(data, "type");
-    var name_x = unpack(data, "name_x");
-    var short_description = unpack(data, "short_description");
-    var metascore = unpack(data, "metascore");
-    var genres = unpack(data, "genres");
-    var recommendations = unpack(data, "recommendations");
-    var release_date = unpack(data, "release_date");
-    var developer = unpack(data, "developer");
-    var publisher = unpack(data, "publisher");
-    var positive = unpack(data, "positive");
-    var negative = unpack(data, "negative");
-    var owners = unpack(data, "owners");
-    var average_forever = unpack(data, "average_forever");
-    var average_2weeks= unpack(data, "average_2weeks");
-    var median_forever = unpack(data, "median_forever");
-    var median_2weeks = unpack(data, "median_2weeks");
-    var price = unpack(data, "price");
-    var initialprice = unpack(data, "initialprice");
-    var discount = unpack(data, "discount");
-    var ccu = unpack(data, "ccu");
-        buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations,
-            release_date, developer, publisher, positive, negative, owners, average_forever,
-            average_2weeks, median_forever, median_2weeks, price, initialprice, discount, ccu, categories);
-        console.log(data)
-        buildTable(data);
-        return data
-      });
-    // console.log(Game)
+  var search = d3.select("#myInput").property("value")
+  d3.json("/api/steam_metadata/category/"+search).then(function (data){
+    var name_x = unpack(data, "Game");
+    var short_description = unpack(data, "Description");
+    var metascore = unpack(data, "Metascore");
+    var genres = unpack(data, "Genres");
+    var categories = unpack(data,"Categories");
+    var recommendations = unpack(data, "Recommendations");
+    var release_date = unpack(data, "Release Date");
+    var developer = unpack(data, "Developer");
+    var publisher = unpack(data, "Publisher");
+    var positive = unpack(data, "Positive");
+    var negative = unpack(data, "Negative");
+    var owners = unpack(data, "Owners");
+    var average_forever = unpack(data, "Average Playtime");
+    var median_forever = unpack(data, "Median Playtime");
+    var price = unpack(data, "Price");
+    buildTable(data);
+    return data
+  });
 }
 
 d3.selectAll("#categoriessearch").on("click", getcategoriesData);
@@ -53,112 +41,83 @@ d3.selectAll("#categoriessearch").on("click", getcategoriesData);
 //////////////////////////////
 
 function getgenresData() {
-    d3.json("/api/appid-mongo").then(function (data){
-        var genres = d3.select("#myInput").property("value")
-        data = data.filter(row=>row.genres===genres);
-        var appid = unpack(data, "appid");
-        var type = unpack(data, "type");
-        var name_x = unpack(data, "name_x");
-        var short_description = unpack(data, "short_description");
-        var metascore = unpack(data, "metascore");
-        var categories = unpack(data, "categories");
-        var recommendations = unpack(data, "recommendations");
-        var release_date = unpack(data, "release_date");
-        var developer = unpack(data, "developer");
-        var publisher = unpack(data, "publisher");
-        var positive = unpack(data, "positive");
-        var negative = unpack(data, "negative");
-        var owners = unpack(data, "owners");
-        var average_forever = unpack(data, "average_forever");
-        var average_2weeks= unpack(data, "average_2weeks");
-        var median_forever = unpack(data, "median_forever");
-        var median_2weeks = unpack(data, "median_2weeks");
-        var price = unpack(data, "price");
-        var initialprice = unpack(data, "initialprice");
-        var discount = unpack(data, "discount");
-        var ccu = unpack(data, "ccu");
-            buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations,
-                release_date, developer, publisher, positive, negative, owners, average_forever,
-                average_2weeks, median_forever, median_2weeks, price, initialprice, discount, ccu, categories);
-            console.log(data)
-            buildTable(data);
-            return data
-      });
-    // console.log(Game)
+  var search = d3.select("#myInput").property("value")
+  d3.json("/api/steam_metadata/genre/"+search).then(function (data){
+    var name_x = unpack(data, "Game");
+    var short_description = unpack(data, "Description");
+    var metascore = unpack(data, "Metascore");
+    var genres = unpack(data, "Genres");
+    var categories = unpack(data,"Categories");
+    var recommendations = unpack(data, "Recommendations");
+    var release_date = unpack(data, "Release Date");
+    var developer = unpack(data, "Developer");
+    var publisher = unpack(data, "Publisher");
+    var positive = unpack(data, "Positive");
+    var negative = unpack(data, "Negative");
+    var owners = unpack(data, "Owners");
+    var average_forever = unpack(data, "Average Playtime");
+    var median_forever = unpack(data, "Median Playtime");
+    var price = unpack(data, "Price");
+    buildTable(data);
+    return data
+  });
 }
+
 
 d3.selectAll("#genressearch").on("click", getgenresData);
 
-function getpriceData() {
-    d3.json("/api/appid-mongo").then(function (data){
-        var price = d3.select("#myInput").property("value")
-        data = data.filter(row=>row.price===price);
-        var appid = unpack(data, "appid");
-        var type = unpack(data, "type");
-        var name_x = unpack(data, "name_x");
-        var short_description = unpack(data, "short_description");
-        var metascore = unpack(data, "metascore");
-        var categories = unpack(data, "categories");
-        var recommendations = unpack(data, "recommendations");
-        var release_date = unpack(data, "release_date");
-        var developer = unpack(data, "developer");
-        var publisher = unpack(data, "publisher");
-        var positive = unpack(data, "positive");
-        var negative = unpack(data, "negative");
-        var owners = unpack(data, "owners");
-        var average_forever = unpack(data, "average_forever");
-        var average_2weeks= unpack(data, "average_2weeks");
-        var median_forever = unpack(data, "median_forever");
-        var median_2weeks = unpack(data, "median_2weeks");
-        var genres = unpack(data, "genres");
-        var initialprice = unpack(data, "initialprice");
-        var discount = unpack(data, "discount");
-        var ccu = unpack(data, "ccu");
-            buildDropdown(appid, type, name_x, short_description, metascore, genres, recommendations,
-                release_date, developer, publisher, positive, negative, owners, average_forever,
-                average_2weeks, median_forever, median_2weeks, price, initialprice, discount, ccu, categories);
-            console.log(data)
-            buildTable(data);
-            return data
-      });
-    // console.log(Game)
+function getnameData() {
+  var search = d3.select("#myInput").property("value")
+  d3.json("/api/steam_metadata/name/"+search).then(function (data){
+    var name_x = unpack(data, "Game");
+    var short_description = unpack(data, "Description");
+    var metascore = unpack(data, "Metascore");
+    var genres = unpack(data, "Genres");
+    var categories = unpack(data,"Categories");
+    var recommendations = unpack(data, "Recommendations");
+    var release_date = unpack(data, "Release Date");
+    var developer = unpack(data, "Developer");
+    var publisher = unpack(data, "Publisher");
+    var positive = unpack(data, "Positive");
+    var negative = unpack(data, "Negative");
+    var owners = unpack(data, "Owners");
+    var average_forever = unpack(data, "Average Playtime");
+    var median_forever = unpack(data, "Median Playtime");
+    var price = unpack(data, "Price");
+    buildTable(data);
+    return data
+  });
 }
 
-d3.selectAll("#pricesearch").on("click", getpriceData);
+d3.selectAll("#namesearch").on("click", getnameData);
+
 
 function buildDropdown(
-appid,
-type,
-name_x,
-short_description,
-metascore,
-genres,
-recommendations,
-release_date,
-developer,
-publisher,
-positive,
-negative,
-owners,
-average_forever,
-average_2weeks,
-median_forever,
-median_2weeks,
-price,
-initialprice,
-discount,
-ccu,
-) {
+  name_x,
+  short_description,
+  metascore,
+  genres,
+  recommendations,
+  categories,
+  release_date,
+  developer,
+  publisher,
+  positive,
+  negative,
+  owners,
+  average_forever,
+  median_forever,
+  price,
+  initialprice){
   var data = d3.select("#myDropdown");
   var tbody = data.select("tbody");
-  for (var i = 0; i < appid.length; i++) {
+  for (var i = 0; i < name_x.length; i++) {
     var trow = tbody.append("tr");
-    trow.append("td").text(appid[i]);
-    trow.append("td").text(type[i]);
     trow.append("td").text(name_x[i]);
     trow.append("td").text(short_description[i]);
-    trow.append("td").text(metascore[i]);
     trow.append("td").text(genres[i]);
+    trow.append("td").text(categories[i]);
+    trow.append("td").text(metascore[i]);
     trow.append("td").text(recommendations[i]);
     trow.append("td").text(release_date[i]);
     trow.append("td").text(developer[i]);
@@ -167,13 +126,9 @@ ccu,
     trow.append("td").text(negative[i]);
     trow.append("td").text(owners[i]);
     trow.append("td").text(average_forever[i]);
-    trow.append("td").text(average_2weeks[i]);
     trow.append("td").text(median_forever[i]);
-    trow.append("td").text(median_2weeks[i]);
     trow.append("td").text(price[i]);
     trow.append("td").text(initialprice,[i]);
-    trow.append("td").text(discount[i]);
-    trow.append("td").text(ccu[i]);
 
 
     // Function called by DOM changes
@@ -211,14 +166,19 @@ var tbody = d3.select("tbody");
 function buildTable(data){
     //clear out existing data
     tbody.html("");
+    var columns = ["Game", "Description", "Genres", "Categories",
+      "Metascore", "Release Date", "Developer", "Publisher", "Positive",
+      "Negative", "Owners", "Average Playtime", "Median Playtime", "Price"]
+
     data.forEach(dataRow => {
-        console.table(dataRow);
+        // console.table(dataRow);
         let row = tbody.append("tr");
 
-       console.table(Object.values(dataRow));
-       Object.values(dataRow).forEach((val) => {
+       // console.table(Object.values(dataRow));
+       // Object.values(dataRow).forEach((val) => {
+       columns.forEach((col) => {
            let cell = row.append("td");
-           cell.text(val);
+           cell.text(dataRow[col]);
        });
     });
 }

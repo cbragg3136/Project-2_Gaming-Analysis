@@ -1,19 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Steam Player Data</title>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-</head>
-<body>
-  <select id="game-select" onchange="optionChanged(this)">
-    <option>Choose a game to display data</option>
-  </select>
+<html>
+    <head>
+        <title>Steam Player Data</title>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+        <link href="static/css/styles2.css" rel="Stylesheet" type="text/css" />
+        <script src="https://d3js.org/d3.v6.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <header>
+      <div class="flex">
+          <div class="logo">
+              <a href="#"><img src="static/images/war_zone.jpg" alt="War Zone" /></a>
+          </div>
+          <nav>
+              <button id="nav-toggle" class="hamburger-menu">
+                  <span class="strip"></span>
+                  <!-- <span class="strip"></span>
+                  <span class="strip"></span> -->
+              </button>
+              <ul id="nav-menu-container">
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="#">Steam Player Data</a></li>
+                  <!-- <li><a href="map.html">MS Games Map</a></li> -->
+                  <!-- <li><a href="MSDetail.html">Ms Detail Games</a></li> -->
+                  <li><a href="PCGames.html">PC Games</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
 
-  <div id="plot"></div>
-  <script src="static/js/top100plot.js"></script>
-</body>
-</html>
+  <body>
+    <div style='color: #000'>
+      <select id="game-select" onchange="optionChanged(this)">
+        <option>Select a game to display data</option>
+      </select>
+  </div>
+      <div id="plot"></div>
+      <script src="static/js/top100plot.js"></script>
+  </body>
+  </html>

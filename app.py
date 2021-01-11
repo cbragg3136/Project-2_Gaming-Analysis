@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, render_template
-from flask_pymongo import PyMongo
+from flask_pymongo import PyMongo, DESCENDING, ASCENDING
 from os import environ
 import datetime
+import re
 
 
 app = Flask(__name__)
@@ -33,6 +34,10 @@ def AboutUs():
 @app.route('/top100plot.html')
 def top100plot():
     return render_template('top100plot.html')
+
+@app.route('/steam.html')
+def steamhtml():
+    return render_template('steam.html')
 
 # STEAM
 
@@ -127,6 +132,25 @@ def get_top100_list():
         data.append(item)
     return jsonify(data)
 
+# route to most recent top100
+# returns name and appid sorted by number of players
+@app.route('/api/current_100/')
+def get_current_100():
+    data = []
+    documents = steamdb.players.find().sort([("Time",DESCENDING),("Current Players",DESCENDING)]).limit(100)
+
+    for d in documents:
+        item = {
+            '_id': str(d['_id']),
+            'Name': d['Name'],
+            'Current Players': d['Current Players'],
+            'Peak Players': d['Peak Players'],
+            'Time': d['Time'],
+            'Link': d['Link']
+        }
+        data.append(item)
+    return jsonify(data)
+
 # route to return steam metadata for all 'games'
 @app.route('/api/steam_metadata')
 def getAppidMongo():
@@ -158,6 +182,108 @@ def getAppidMongo():
             'Initial Price': game['initialprice'],
             'Discount (%)': game['discount'],
             'CCU': game['ccu']
+        }
+
+        data.append(item)
+
+    return jsonify(data)
+
+# route to return a search selection of steam game data
+# search on game category
+@app.route('/api/steam_metadata/category/<category>')
+def getSteamCategory(category):
+    search = r".*"+category+r".*"
+    appid = steamdb.steam_metadata.find({"categories":{"$regex":search,"$options":"i"}})
+    data = []
+
+    for game in appid:
+        item = {
+            '_id': str(game['_id']),
+            'Appid': game['appid'],
+            'Type': game['type'],
+            'Game': game['name_x'],
+            'Description': game['short_description'],
+            'Metascore': game['metascore'],
+            'Categories': game['categories'],
+            'Genres': game['genres'],
+            'Recommendations': game['recommendations'],
+            'Release Date': game['release_date'],
+            'Developer': game['developer'],
+            'Publisher': game['publisher'],
+            'Positive': game['positive'],
+            'Negative': game['negative'],
+            'Owners': game['owners'],
+            'Average Playtime': game['average_forever'],
+            'Median Playtime': game['median_forever'],
+            'Price': game['price'],
+        }
+
+        data.append(item)
+
+    return jsonify(data)
+
+# route to return a search selection of steam game data
+# search on game genre
+@app.route('/api/steam_metadata/genre/<genre>')
+def getSteamGenre(genre):
+    search = r".*"+genre+r".*"
+    appid = steamdb.steam_metadata.find({"genres":{"$regex":search,"$options":"i"}})
+    data = []
+
+    for game in appid:
+        item = {
+            '_id': str(game['_id']),
+            'Appid': game['appid'],
+            'Type': game['type'],
+            'Game': game['name_x'],
+            'Description': game['short_description'],
+            'Metascore': game['metascore'],
+            'Categories': game['categories'],
+            'Genres': game['genres'],
+            'Recommendations': game['recommendations'],
+            'Release Date': game['release_date'],
+            'Developer': game['developer'],
+            'Publisher': game['publisher'],
+            'Positive': game['positive'],
+            'Negative': game['negative'],
+            'Owners': game['owners'],
+            'Average Playtime': game['average_forever'],
+            'Median Playtime': game['median_forever'],
+            'Price': game['price'],
+        }
+
+        data.append(item)
+
+    return jsonify(data)
+
+# route to return a search selection of steam game data
+# search on game genre
+@app.route('/api/steam_metadata/name/<name>')
+def getSteamName(name):
+    search = r".*"+name+r".*"
+    appid = steamdb.steam_metadata.find({"name_x":{"$regex":search,"$options":"i"}})
+    data = []
+
+    for game in appid:
+        item = {
+            '_id': str(game['_id']),
+            'Appid': game['appid'],
+            'Type': game['type'],
+            'Game': game['name_x'],
+            'Description': game['short_description'],
+            'Metascore': game['metascore'],
+            'Categories': game['categories'],
+            'Genres': game['genres'],
+            'Recommendations': game['recommendations'],
+            'Release Date': game['release_date'],
+            'Developer': game['developer'],
+            'Publisher': game['publisher'],
+            'Positive': game['positive'],
+            'Negative': game['negative'],
+            'Owners': game['owners'],
+            'Average Playtime': game['average_forever'],
+            'Median Playtime': game['median_forever'],
+            'Price': game['price'],
         }
 
         data.append(item)
