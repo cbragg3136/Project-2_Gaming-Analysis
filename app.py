@@ -23,6 +23,10 @@ def index():
 def MSGames():
     return render_template('MSGames.html')
 
+@app.route('/MSDetail.html')
+def MSGames():
+    return render_template('MSDetail.html')
+
 @app.route('/PCGames.html')
 def PCGames():
     return render_template('PCGames.html')
@@ -38,6 +42,10 @@ def top100plot():
 @app.route('/steam.html')
 def steamhtml():
     return render_template('steam.html')
+
+@app.route('/map.html')
+def steamhtml():
+    return render_template('map.html')
 
 # STEAM
 
