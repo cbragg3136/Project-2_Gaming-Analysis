@@ -1,5 +1,3 @@
-// https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
-
 var streetMap = 
 
 L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
@@ -17,7 +15,7 @@ var myMap = L.map("map",{
 });
 
 streetMap.addTo(myMap);
-d3.json("users.json", function(earthquakeData){
+d3.json("no_us_users.json", function(earthquakeData){
     function styleinfo(feature){
         return {
             radius: getRadius(feature.properties.User),
@@ -52,7 +50,7 @@ d3.json("users.json", function(earthquakeData){
     }
 
     function getRadius(Users){
-        return Users / 500;
+        return Users / 300;
     }
 
     L.geoJson(earthquakeData, {
