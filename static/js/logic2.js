@@ -1,5 +1,3 @@
-// https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
-
 var streetMap = 
 
 L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
