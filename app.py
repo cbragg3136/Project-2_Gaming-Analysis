@@ -1,7 +1,8 @@
 from flask import Flask, jsonify, render_template
-from flask_pymongo import PyMongo
+from flask_pymongo import PyMongo, DESCENDING, ASCENDING
 from os import environ
 import datetime
+import re
 
 
 app = Flask(__name__)
@@ -10,6 +11,8 @@ app.config['MONGO_URI'] = environ.get(
     'MONGODB_URI', 'mongodb://localhost:27017/steam_project_db')
 
 mongo = PyMongo(app)
+steamdb = mongo.cx['steamdb']
+xboxdb = mongo.cx['xboxdb']
 
 # Routes to html
 @app.route('/')
@@ -19,6 +22,10 @@ def index():
 @app.route('/MSGames.html')
 def MSGames():
     return render_template('MSGames.html')
+
+@app.route('/MSDetail.html')
+def MSDetail():
+    return render_template('MSDetail.html')
 
 @app.route('/PCGames.html')
 def PCGames():
@@ -32,13 +39,25 @@ def AboutUs():
 def top100plot():
     return render_template('top100plot.html')
 
+@app.route('/steam.html')
+def steamhtml():
+    return render_template('steam.html')
+
+@app.route('/MSMap.html')
+def msmaphtml():
+    return render_template('MSMap.html')
+
+@app.route('/PCMap.html')
+def PCmaphtml():
+    return render_template('PCMap.html')
+
 # STEAM
 
 # route to return steam user location by continent
 @app.route('/api/steam_users_continents')
 def GetSteamUsersContinents():
     data = []
-    continents = mongo.db.steam_users_continents.find({})
+    continents = steamdb.steam_users_continents.find({})
     for cnt in continents:
         item = {
             '_id': str(cnt['_id']),
@@ -52,7 +71,7 @@ def GetSteamUsersContinents():
 @app.route('/api/steam_users_countries')
 def GetSteamUsersCountries():
     data = []
-    countries = mongo.db.steam_users_countries.find({})
+    countries = steamdb.steam_users_countries.find({})
     for cn in countries:
         item = {
             '_id': str(cn['_id']),
@@ -66,7 +85,7 @@ def GetSteamUsersCountries():
 @app.route('/api/steam_users_states')
 def GetSteamUsersStates():
     data = []
-    states = mongo.db.steam_users_states_us.find({})
+    states = steamdb.steam_users_states_us.find({})
     for st in states:
         item = {
             '_id': str(st['_id']),
@@ -81,7 +100,7 @@ def GetSteamUsersStates():
 @app.route('/api/players')
 def show_player_data():
     data = []
-    games = mongo.db.players.find({})
+    games = steamdb.players.find({})
     for g in games:
         item = {
             '_id': str(g['_id']),
@@ -98,7 +117,7 @@ def show_player_data():
 @app.route('/api/players/<appid>')
 def get_players_appid(appid):
     data = []
-    documents = mongo.db.players.find({"appid":appid})
+    documents = steamdb.players.find({"appid":appid})
     for d in documents:
         item = {
             'Name': d['Name'],
@@ -113,7 +132,7 @@ def get_players_appid(appid):
 @app.route('/api/top100-list/')
 def get_top100_list():
     data = []
-    documents = mongo.db.players.aggregate([{"$group":
+    documents = steamdb.players.aggregate([{"$group":
         { "_id": { "Name": "$Name", "appid": "$appid"}}},
         {"$sort": {"_id":1}}])
 
@@ -125,10 +144,29 @@ def get_top100_list():
         data.append(item)
     return jsonify(data)
 
+# route to most recent top100
+# returns name and appid sorted by number of players
+@app.route('/api/current_100/')
+def get_current_100():
+    data = []
+    documents = steamdb.players.find().sort([("Time",DESCENDING),("Current Players",DESCENDING)]).limit(100)
+
+    for d in documents:
+        item = {
+            'Name': d['Name'],
+            'Appid': d['appid'],
+            'Current Players': d['Current Players'],
+            'Peak Players': d['Peak Players'],
+            'Time': d['Time'],
+            'Link': d['Link']
+        }
+        data.append(item)
+    return jsonify(data)
+
 # route to return steam metadata for all 'games'
-@app.route('/api/appid-mongo')
+@app.route('/api/steam_metadata')
 def getAppidMongo():
-    appid = mongo.steamdb.steam_metadata.find({})
+    appid = steamdb.steam_metadata.find({})
     data = []
 
     for game in appid:
@@ -162,11 +200,113 @@ def getAppidMongo():
 
     return jsonify(data)
 
+# route to return a search selection of steam game data
+# search on game category
+@app.route('/api/steam_metadata/category/<category>')
+def getSteamCategory(category):
+    search = r".*"+category+r".*"
+    appid = steamdb.steam_metadata.find({"categories":{"$regex":search,"$options":"i"}})
+    data = []
+
+    for game in appid:
+        item = {
+            '_id': str(game['_id']),
+            'Appid': game['appid'],
+            'Type': game['type'],
+            'Game': game['name_x'],
+            'Description': game['short_description'],
+            'Metascore': game['metascore'],
+            'Categories': game['categories'],
+            'Genres': game['genres'],
+            'Recommendations': game['recommendations'],
+            'Release Date': game['release_date'],
+            'Developer': game['developer'],
+            'Publisher': game['publisher'],
+            'Positive': game['positive'],
+            'Negative': game['negative'],
+            'Owners': game['owners'],
+            'Average Playtime': game['average_forever'],
+            'Median Playtime': game['median_forever'],
+            'Price': game['price'],
+        }
+
+        data.append(item)
+
+    return jsonify(data)
+
+# route to return a search selection of steam game data
+# search on game genre
+@app.route('/api/steam_metadata/genre/<genre>')
+def getSteamGenre(genre):
+    search = r".*"+genre+r".*"
+    appid = steamdb.steam_metadata.find({"genres":{"$regex":search,"$options":"i"}})
+    data = []
+
+    for game in appid:
+        item = {
+            '_id': str(game['_id']),
+            'Appid': game['appid'],
+            'Type': game['type'],
+            'Game': game['name_x'],
+            'Description': game['short_description'],
+            'Metascore': game['metascore'],
+            'Categories': game['categories'],
+            'Genres': game['genres'],
+            'Recommendations': game['recommendations'],
+            'Release Date': game['release_date'],
+            'Developer': game['developer'],
+            'Publisher': game['publisher'],
+            'Positive': game['positive'],
+            'Negative': game['negative'],
+            'Owners': game['owners'],
+            'Average Playtime': game['average_forever'],
+            'Median Playtime': game['median_forever'],
+            'Price': game['price'],
+        }
+
+        data.append(item)
+
+    return jsonify(data)
+
+# route to return a search selection of steam game data
+# search on game genre
+@app.route('/api/steam_metadata/name/<name>')
+def getSteamName(name):
+    search = r".*"+name+r".*"
+    appid = steamdb.steam_metadata.find({"name_x":{"$regex":search,"$options":"i"}})
+    data = []
+
+    for game in appid:
+        item = {
+            '_id': str(game['_id']),
+            'Appid': game['appid'],
+            'Type': game['type'],
+            'Game': game['name_x'],
+            'Description': game['short_description'],
+            'Metascore': game['metascore'],
+            'Categories': game['categories'],
+            'Genres': game['genres'],
+            'Recommendations': game['recommendations'],
+            'Release Date': game['release_date'],
+            'Developer': game['developer'],
+            'Publisher': game['publisher'],
+            'Positive': game['positive'],
+            'Negative': game['negative'],
+            'Owners': game['owners'],
+            'Average Playtime': game['average_forever'],
+            'Median Playtime': game['median_forever'],
+            'Price': game['price'],
+        }
+
+        data.append(item)
+
+    return jsonify(data)
+
 # XBOX
 # route to return xbox metadata
 @app.route('/api/xbox_metadata')
 def getXboxMetadata():
-    xbox_md = mongo.xboxdb.xbox_metadata.find({})
+    xbox_md = xboxdb.xbox_metadata.find({})
     data = []
 
     for xbox in xbox_md:
@@ -184,10 +324,10 @@ def getXboxMetadata():
 
     return jsonify(data)
 
-# route to return xbox top50 games 
+# route to return xbox top50 games
 @app.route('/api/xbox_top50')
 def GetXboxTop50():
-    top50 = mongo.xboxdb.top50_by_country.find({})
+    top50 = xboxdb.top50_by_country.find({})
     data = []
     for top in top50:
         item = {
