@@ -15,7 +15,7 @@ var myMap = L.map("map",{
 });
 
 streetMap.addTo(myMap);
-d3.json("no_us_users.json", function(earthquakeData){
+d3.json("../Scraped Data/no_us_users.json", function(earthquakeData){
     function styleinfo(feature){
         return {
             radius: getRadius(feature.properties.User),
