@@ -1,4 +1,4 @@
-fetch ("./msdetail.json")
+fetch ("/api/xbox_metadata")
   .then(function(resp){
     return resp.json();
   })
@@ -14,7 +14,7 @@ function unpack(rows, index) {
 }
 
 function getidData() {
-    d3.json("./msdetail.json").then(function (data){
+    d3.json("/api/xbox_metadata").then(function (data){
       var id = d3.select("#myInput").property("value")
       data = data.filter(row=>row.ID===id);
     //   var id = unpack(data, "ID");
@@ -31,15 +31,15 @@ function getidData() {
         });
       // console.log(Game)
   }
-  
+
   d3.selectAll("#idsearch").on("click", getidData);
-  
+
 
 
 //////////////////////////////
 
 function getgameData() {
-  d3.json("./msdetail.json").then(function (data){
+  d3.json("/api/xbox_metadata").then(function (data){
     var game = d3.select("#myInput").property("value")
     data = data.filter(row=>row.Game===game);
     var id = unpack(data, "ID");
@@ -80,7 +80,7 @@ function buildDropdown(
     trow.append("td").text(Rating[i]);
     trow.append("td").text(Screen[i]);
 
-    
+
     // Function called by DOM changes
     function dropdownchange() {
       var dropdownMenu = d3.select("#myDropdown");
@@ -89,7 +89,7 @@ function buildDropdown(
       // Initialize an empty array for the country's data
       var data = getData();
       console.log(data)
-    
+
       if (dataset == 'us') {
           data = us;
       }
@@ -102,7 +102,7 @@ function buildDropdown(
       // Call function to update the chart
       updatePlotly(data);
     }
-    
+
     // Update the restyled plot's values
     function updatePlotly(newdata) {
       Plotly.restyle("pie", "values", [newdata]);
@@ -120,12 +120,11 @@ function buildTable(data){
         console.table(dataRow);
         let row = tbody.append("tr");
 
-       console.table(Object.values(dataRow));
-       Object.values(dataRow).forEach((val) => {
+       // console.table(Object.values(dataRow));
+       let colList = ["Date", "Game", "Description","Genre", "Rating", "Rating Notes"]
+       colList.forEach((val) => {
            let cell = row.append("td");
-           cell.text(val);
+           cell.text(dataRow[val]);
        });
     });
 }
-
-
