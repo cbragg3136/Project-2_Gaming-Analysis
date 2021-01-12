@@ -43,9 +43,13 @@ def top100plot():
 def steamhtml():
     return render_template('steam.html')
 
-@app.route('/map.html')
-def maphtml():
-    return render_template('map.html')
+@app.route('/MSMap.html')
+def msmaphtml():
+    return render_template('MSMap.html')
+
+@app.route('/PCMap.html')
+def PCmaphtml():
+    return render_template('PCMap.html')
 
 # STEAM
 
