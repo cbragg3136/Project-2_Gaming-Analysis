@@ -130,7 +130,7 @@ function buildTable(data){
     data.forEach(dataRow => {
         // console.table(dataRow);
         let row = tbody.append("tr");
-        var colList = ["ID", "Date", "Country", "Game", "Rank"]
+        var colList = ["Date", "Country", "Game", "Rank"]
         colList.forEach((val) => {
            let cell = row.append("td");
            cell.text(dataRow[val]);
