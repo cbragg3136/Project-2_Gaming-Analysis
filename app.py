@@ -302,6 +302,20 @@ def getSteamName(name):
 
     return jsonify(data)
 
+# returns a single record containing the features
+@app.route('/api/steam_no_us_users')
+def getSteamNoUsUsers():
+    rankone = steamdb.steam_no_us_users.find_one()
+    item = {'features':rankone['features']}
+    # features = []
+    # for feature in rankone['features']:
+    #     print(feature)
+    #     features = features.append(feature)
+    # item = {'features': features}
+    data = [item['features'][i] for i in item['features']]
+    return jsonify({'features':data})
+
+
 # XBOX
 # route to return xbox metadata
 @app.route('/api/xbox_metadata')
