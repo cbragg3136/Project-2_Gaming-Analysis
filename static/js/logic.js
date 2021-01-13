@@ -17,7 +17,8 @@ var myMap = L.map("map",{
 });
 
 streetMap.addTo(myMap);
-d3.json("../../Scraped Data/rank1games.json", function(earthquakeData){
+d3.json("../Scraped Data/rank1games.json", function(earthquakeData){
+    console.log(earthquakeData)
     function styleinfo(feature){
         return {
             radius: getRadius(feature.properties.mag),
