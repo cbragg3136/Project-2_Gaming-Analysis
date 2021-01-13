@@ -342,7 +342,19 @@ def GetXboxTop50():
 
     return jsonify(data)
 
-
+# route to return the top xbox games by country
+# returns a single record containing the features
+@app.route('/api/xbox_rank1games')
+def GetXboxRankOne():
+    rankone = xboxdb.xbox_rank_one_games.find_one()
+    item = {'features':rankone['features']}
+    # features = []
+    # for feature in rankone['features']:
+    #     print(feature)
+    #     features = features.append(feature)
+    # item = {'features': features}
+    data = [item['features'][i] for i in item['features']]
+    return jsonify({'features':data})
 
 if __name__ == '__main__':
     app.run(debug=True)

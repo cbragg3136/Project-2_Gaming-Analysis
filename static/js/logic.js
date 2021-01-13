@@ -1,6 +1,6 @@
 // https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
 
-var streetMap = 
+var streetMap =
 
 L.tileLayer("https://api.mapbox.com/styles/v1/mapbox/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
   attribution: "© <a href='https://www.mapbox.com/about/maps/'>Mapbox</a> © <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a> <strong><a href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a></strong>",
@@ -17,7 +17,8 @@ var myMap = L.map("map",{
 });
 
 streetMap.addTo(myMap);
-d3.json("../Scraped Data/rank1games.json", function(earthquakeData){
+d3.json("/api/xbox_rank1games",function(earthquakeData){
+// d3.json("rank1games.json",function(earthquakeData){
     console.log(earthquakeData)
     function styleinfo(feature){
         return {
@@ -31,9 +32,9 @@ d3.json("../Scraped Data/rank1games.json", function(earthquakeData){
     }
     function getColor(magnitude){
         switch (true){
-            case magnitude > 5: 
+            case magnitude > 5:
                 return "blue";
-            default: 
+            default:
                 return "purple";
         }
     }
